@@ -1,0 +1,93 @@
+name: Discover, verify, and publish Qatar offers
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: qatar-offers-refresh-main
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: crawler/requirements.txt
+
+      - name: Install permitted local OCR tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-ara
+
+      - name: Install Python dependencies
+        run: python -m pip install --disable-pip-version-check -r crawler/requirements.txt
+
+      # If main changes while collection is running, start from the latest commit and
+      # recollect against its code/config/data. Never force-push over newer work.
+      - name: Collect offers and safely publish generated data
+        shell: bash
+        env:
+          TZ: Asia/Qatar
+          CRAWLER_SLEEP: "2"
+          MAX_NEW_IMAGES: "25"
+        run: |
+          set -euo pipefail
+          git config user.name "offers-bot"
+          git config user.email "bot@users.noreply.github.com"
+          published=0
+          for attempt in 1 2 3; do
+            echo "Collection/publish attempt ${attempt}/3"
+            git fetch origin main
+            git reset --hard origin/main
+            python crawler/run.py
+            git add data/state.json web/offers.json web/malls.json
+            if git diff --cached --quiet; then
+              echo "No generated data changes to commit."
+              published=1
+              break
+            fi
+            git commit -m "Refresh verified Qatar offers"
+            if git push origin HEAD:main; then
+              published=1
+              break
+            fi
+            echo "Remote main advanced during publish; retrying from the latest commit."
+            sleep "$attempt"
+          done
+          if [[ "$published" != "1" ]]; then
+            echo "Could not publish after three safe attempts." >&2
+            exit 1
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Package static website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - name: Deploy website
+        id: deploy
+        uses: actions/deploy-pages@v4
