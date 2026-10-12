@@ -1,0 +1,42 @@
+name: Test Qatar Offers
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Install Playwright Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Compile Python files
+        run: python -m py_compile api.py crawler/ai.py crawler/run.py tests_api.py browser_tests.py
+      - name: Test collector
+        run: python crawler/test_run.py
+      - name: Test API and admin operations
+        run: python tests_api.py
+      - name: Playwright CLI page smoke test
+        shell: bash
+        run: |
+          python -m http.server 8765 --directory web >/tmp/qatar-offers-static.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8765/ >/dev/null; then break; fi
+            sleep 1
+          done
+          playwright screenshot --browser chromium --viewport-size="1280,900" --wait-for-selector="#mallsGrid" --wait-for-timeout=2000 http://127.0.0.1:8765/ /tmp/qatar-offers-home.png
+          test -s /tmp/qatar-offers-home.png
+      - name: Test browser flows
+        run: python -m pytest -q browser_tests.py
