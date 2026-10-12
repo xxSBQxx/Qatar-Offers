@@ -1,16 +1,35 @@
 """Offline API smoke tests for authentication, visibility, management, and scheduler settings."""
 import os,tempfile,json,datetime as dt
 os.environ['DATABASE_PATH']=tempfile.mktemp(suffix='.sqlite3')
-os.environ['ADMIN_USERNAME']='admin-test';os.environ['ADMIN_PASSWORD']='ThisIsATestAdminPassword123!';os.environ['SESSION_SECRET']='integration-test-secret-long-enough'
+os.environ['ADMIN_USERNAME']='admin-test';os.environ['ADMIN_PASSWORD']='ThisIsATestAdminPassword123!';os.environ['SESSION_SECRET']='integration-test-secret-long-enough';os.environ['SESSION_SECURE']='0'
 from fastapi.testclient import TestClient
 import api
 with TestClient(api.app) as client:
  assert client.get('/api/health').status_code==200
  assert client.get('/').status_code==200 and client.get('/admin').status_code==200
+ for route in ('/privacy','/terms','/cookies','/report','/browse.html'):
+  assert client.get(route).status_code==200,route
+ assert client.post('/api/auth/register',json={'username':'no-consent','password':'UserPasswordLong123!'}).status_code==400
  runtime=json.loads(api.build_runtime_sources().read_text(encoding='utf-8'))
- assert len(runtime['malls'])>=3 and len(runtime['feeds'])>=2,runtime
+ assert len(runtime['malls'])>=3 and len(runtime['discovery_queries'])>=5 and len(runtime['social_discovery_queries'])>=3,runtime
  r=client.post('/api/admin/login',json={'username':'admin-test','password':'ThisIsATestAdminPassword123!'})
  assert r.status_code==200,r.text
+ # Reports require explicit privacy acknowledgement and are manageable only by admins.
+ bad=client.post('/api/reports',json={'report_type':'expired_offer','message':'This offer has expired and the source page no longer lists it.','consent':False})
+ assert bad.status_code==400,bad.text
+ rep=client.post('/api/reports',json={'report_type':'expired_offer','offer_url':'https://8.8.8.8/offers/old','source_url':'https://8.8.8.8/original','message':'This offer has expired and the source page no longer lists it.','consent':True})
+ assert rep.status_code==200,rep.text
+ rid=rep.json()['report_id']
+ assert client.get('/api/admin/reports?status=all').status_code==200
+ assert client.patch(f'/api/admin/reports/{rid}',json={'status':'resolved'}).status_code==200
+ # Discovery leads are review-only until an administrator promotes them.
+ state_path=api.ROOT/'data'/'state.json';saved_state=state_path.read_text(encoding='utf-8')
+ try:
+  state_path.write_text(json.dumps({'offers':{},'discovered_sources':{'disc-test':{'id':'disc-test','url':'https://8.8.8.8/retail-offers','title':'Retail offers lead','status':'pending','discovered_via':'Google Programmable Search'}}}),encoding='utf-8')
+  leads=client.get('/api/admin/discoveries?status=pending').json();assert any(x['id']=='disc-test' for x in leads)
+  promoted=client.post('/api/admin/discoveries/disc-test/promote',json={});assert promoted.status_code==200,promoted.text
+  assert any(x['url']=='https://8.8.8.8/retail-offers' for x in client.get('/api/admin/sources').json())
+ finally:state_path.write_text(saved_state,encoding='utf-8')
  # Seed a pending offer, verify it is hidden, then manually approve it.
  with api.connect() as c:
   c.execute("INSERT INTO offers(id,store_name,title,description,category,discount_text,source_url,verification_status,verification_reason,last_checked_at,first_seen,last_seen,is_active,manual_status,evidence,confidence,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",('test-offer','Test Merchant','40% off test item','Source text','fashion','40% off','https://example.qa/offers','pending','Needs review',api.now(),api.today(),api.today(),0,'auto','Test source evidence',0.8,api.now()))
@@ -63,7 +82,9 @@ with TestClient(api.app) as client:
  assert cat['parent_slug']=='fashion'
  assert client.patch(f"/api/admin/categories/{cat['id']}",json={'name':'Updated Category'}).status_code==200
  # A regular user can register, but cannot access admin APIs.
- u=client.post('/api/auth/register',json={'username':'test-user','password':'UserPasswordLong123!'})
+ u=client.post('/api/auth/register',json={'username':'test-user','password':'UserPasswordLong123!','terms_accepted':True})
  assert u.status_code==200,u.text
  assert client.get('/api/admin/overview').status_code==403
+ deletion=client.delete('/api/auth/account');assert deletion.status_code==200,deletion.text
+ assert client.get('/api/auth/me').json().get('user') is None
 print('all API authentication, verification, management, and scheduling smoke tests passed')

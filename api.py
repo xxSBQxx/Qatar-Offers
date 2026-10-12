@@ -12,6 +12,8 @@ from fastapi.responses import FileResponse, JSONResponse
 ROOT=Path(__file__).resolve().parent
 DB_PATH=Path(os.environ.get('DATABASE_PATH',ROOT/'data/qatar_offers.sqlite3'))
 QATAR=ZoneInfo('Asia/Qatar');SESSION_COOKIE='qo_session';SESSION_HOURS=int(os.environ.get('SESSION_HOURS','12'))
+SESSION_SECRET=os.environ.get('SESSION_SECRET','').strip() or secrets.token_urlsafe(48)
+if not os.environ.get('SESSION_SECRET','').strip():print('WARNING: SESSION_SECRET is unset; a random temporary secret was generated. Set a persistent secret before production deployment.')
 MAX_BODY=1_000_000;RATE_WINDOW=60;RATE_MAX=int(os.environ.get('API_RATE_LIMIT','120'))
 _RATE:dict[str,list[float]]={}
 
@@ -48,6 +50,7 @@ def init_db():
   CREATE TABLE IF NOT EXISTS jobs(id INTEGER PRIMARY KEY AUTOINCREMENT,kind TEXT NOT NULL,status TEXT NOT NULL,started_at TEXT,finished_at TEXT,summary TEXT,error TEXT,created_by INTEGER,created_at TEXT NOT NULL,FOREIGN KEY(created_by) REFERENCES users(id) ON DELETE SET NULL);
   CREATE TABLE IF NOT EXISTS sessions(token_hash TEXT PRIMARY KEY,user_id INTEGER NOT NULL,expires_at TEXT NOT NULL,created_at TEXT NOT NULL,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
   CREATE TABLE IF NOT EXISTS app_settings(key TEXT PRIMARY KEY,value TEXT NOT NULL,updated_at TEXT NOT NULL);
+  CREATE TABLE IF NOT EXISTS reports(id INTEGER PRIMARY KEY AUTOINCREMENT,report_type TEXT NOT NULL,offer_url TEXT,source_url TEXT,message TEXT NOT NULL,contact_email TEXT,consent INTEGER NOT NULL,status TEXT NOT NULL DEFAULT 'pending',created_at TEXT NOT NULL,updated_at TEXT NOT NULL,reviewed_by INTEGER,FOREIGN KEY(reviewed_by) REFERENCES users(id) ON DELETE SET NULL);
   ''')
   c.execute('INSERT OR IGNORE INTO merchant_aliases(alias,merchant_id,created_at) SELECT name,id,updated_at FROM merchants')
   source_columns={r['name'] for r in c.execute('PRAGMA table_info(sources)').fetchall()}
@@ -71,7 +74,8 @@ def _import_json(c):
  try:malls=json.loads(malls_path.read_text(encoding='utf-8'))
  except Exception:malls=[]
  for m in malls if isinstance(malls,list) else []:
-  c.execute('INSERT OR IGNORE INTO malls(id,name,name_ar,area,updated_at) VALUES(?,?,?,?,?)',(m.get('id'),m.get('name') or m.get('id'),m.get('name_ar'),m.get('area'),now()))
+  c.execute('INSERT OR IGNORE INTO malls(id,name,name_ar,area,website,updated_at) VALUES(?,?,?,?,?,?)',(m.get('id'),m.get('name') or m.get('id'),m.get('name_ar'),m.get('area'),m.get('website'),now()))
+  if m.get('website'):c.execute('UPDATE malls SET website=COALESCE(website,?),name_ar=COALESCE(name_ar,?),area=COALESCE(area,?) WHERE id=?',(m.get('website'),m.get('name_ar'),m.get('area'),m.get('id')))
  try:state=json.loads(offers_path.read_text(encoding='utf-8'))
  except Exception:state={}
  for o in state.get('offers',{}).values() if isinstance(state.get('offers'),dict) else []:
@@ -80,7 +84,8 @@ def _import_json(c):
  try:cfg=json.loads((ROOT/'sources.json').read_text(encoding='utf-8'))
  except Exception:cfg={}
  for m in cfg.get('malls',[]):
-  c.execute('INSERT OR IGNORE INTO malls(id,name,name_ar,area,updated_at) VALUES(?,?,?,?,?)',(m.get('id'),m.get('name') or m.get('id'),m.get('name_ar'),m.get('area'),now()))
+  c.execute('INSERT OR IGNORE INTO malls(id,name,name_ar,area,website,updated_at) VALUES(?,?,?,?,?,?)',(m.get('id'),m.get('name') or m.get('id'),m.get('name_ar'),m.get('area'),m.get('website'),now()))
+  if m.get('website'):c.execute('UPDATE malls SET website=COALESCE(website,?),name_ar=COALESCE(name_ar,?),area=COALESCE(area,?) WHERE id=?',(m.get('website'),m.get('name_ar'),m.get('area'),m.get('id')))
   for p in m.get('pages',[]):
    if p.get('url'):
     c.execute('INSERT OR IGNORE INTO sources(name,url,source_type,mall_id,settings,created_at) VALUES(?,?,?,?,?,?)',(m.get('name','Source'),p['url'],p.get('type','text'),m.get('id'),json.dumps(p,ensure_ascii=False),now()))
@@ -137,7 +142,7 @@ def user_obj(row):return {'id':row['id'],'username':row['username'],'role':row['
 def offer_obj(row):
  o=dict(row);o['is_active']=bool(o.get('is_active'));return o
 
-def session_sign(token):return hmac.new(os.environ.get('SESSION_SECRET','').encode() or b'local-dev-secret-change-me',token.encode(),hashlib.sha256).hexdigest()
+def session_sign(token):return hmac.new(SESSION_SECRET.encode(),token.encode(),hashlib.sha256).hexdigest()
 def issue_session(c,user_id):
  token=secrets.token_urlsafe(32);hashed=hashlib.sha256(token.encode()).hexdigest();expiry=dt.datetime.now(QATAR)+dt.timedelta(hours=SESSION_HOURS)
  c.execute('INSERT INTO sessions(token_hash,user_id,expires_at,created_at) VALUES(?,?,?,?)',(hashed,user_id,expiry.isoformat(),now()));return token+'.'+session_sign(token)
@@ -183,9 +188,19 @@ async def current_user(request:Request,required=False,admin=False):
  if admin and u['role']!='admin':raise HTTPException(403,'Administrator role required')
  return u
 
+def prune_retained_records():
+ """Prune only resolved reports and audit events beyond configured retention windows."""
+ report_days=max(30,min(3650,int(os.environ.get('REPORT_RETENTION_DAYS','180'))))
+ audit_days=max(90,min(3650,int(os.environ.get('AUDIT_RETENTION_DAYS','365'))))
+ with connect() as c:
+  report_cutoff=(dt.datetime.now(QATAR)-dt.timedelta(days=report_days)).isoformat(timespec='seconds')
+  audit_cutoff=(dt.datetime.now(QATAR)-dt.timedelta(days=audit_days)).isoformat(timespec='seconds')
+  c.execute("DELETE FROM reports WHERE status IN ('resolved','dismissed') AND updated_at<?",(report_cutoff,))
+  c.execute('DELETE FROM audit_logs WHERE created_at<?',(audit_cutoff,))
+
 @asynccontextmanager
 async def lifespan(app):
- init_db()
+ init_db();prune_retained_records()
  async def scheduler():
   while True:
    with connect() as c:row=c.execute("SELECT value FROM app_settings WHERE key='discovery_interval_hours'").fetchone()
@@ -193,6 +208,8 @@ async def lifespan(app):
    await asyncio.sleep(interval)
    try:await asyncio.to_thread(run_collection,None)
    except Exception as e:print('scheduled collector failed:',str(e)[:300])
+   try:await asyncio.to_thread(prune_retained_records)
+   except Exception as e:print('retention cleanup failed:',str(e)[:200])
  task=asyncio.create_task(scheduler())
  try:yield
  finally:task.cancel()
@@ -271,16 +288,38 @@ def public_analytics():
   cats=[dict(r) for r in c.execute('SELECT category,COUNT(*) AS count FROM offers WHERE '+active_sql+' GROUP BY category',(today(),today(),fresh_cutoff())).fetchall()]
   return {'active':active,'categories':cats,'updated_at':now(),'timezone':'Asia/Qatar'}
 
+@app.post('/api/reports')
+async def create_report(request:Request):
+ d=await body_json(request)
+ kind=str(d.get('report_type','')).strip()
+ if kind not in ('expired_offer','inaccurate_offer','copyright','privacy','other'):raise HTTPException(400,'Choose a valid report type')
+ message=str(d.get('message','')).strip()
+ if not 20<=len(message)<=3000:raise HTTPException(400,'Please provide 20–3000 characters describing the issue')
+ def valid_optional_url(value):
+  if not value:return None
+  value=str(value).strip()
+  if len(value)>2048 or not re.match(r'^https?://',value) or not is_public_http_url(value):raise HTTPException(400,'Links must be valid public HTTP(S) URLs')
+  return value
+ offer_url=valid_optional_url(d.get('offer_url'));source_url=valid_optional_url(d.get('source_url'))
+ email=str(d.get('contact_email','')).strip()[:254] or None
+ if email and not re.fullmatch(r'[^\s@]+@[^\s@]+\.[^\s@]+',email):raise HTTPException(400,'Enter a valid contact email or leave it blank')
+ if d.get('consent') is not True:raise HTTPException(400,'Please acknowledge the privacy notice before submitting this report')
+ with connect() as c:
+  cur=c.execute("INSERT INTO reports(report_type,offer_url,source_url,message,contact_email,consent,status,created_at,updated_at) VALUES(?,?,?,?,?,?,'pending',?,?)",(kind,offer_url,source_url,message,email,1,now(),now()))
+  rid=cur.lastrowid
+ return {'ok':True,'report_id':rid,'message':'Report received for administrator review.'}
+
 @app.post('/api/auth/register')
 async def register(request:Request):
  d=await body_json(request);username=str(d.get('username','')).strip();password=str(d.get('password',''))
+ if d.get('terms_accepted') is not True:raise HTTPException(400,'You must accept the Terms and acknowledge the Privacy Policy to create an account.')
  if not re.fullmatch(r'[A-Za-z0-9_.-]{3,40}',username):raise HTTPException(400,'Username must be 3–40 letters, numbers, dots, underscores or hyphens')
  if len(password)<12 or len(password)>256:raise HTTPException(400,'Password must be 12–256 characters')
  with connect() as c:
   try:c.execute('INSERT INTO users(username,password_hash,role,created_at) VALUES(?,?,?,?)',(username,password_hash(password),'user',now()))
   except sqlite3.IntegrityError:raise HTTPException(409,'Username already exists')
-  uid=c.execute('SELECT id FROM users WHERE username=?',(username,)).fetchone()['id'];token=issue_session(c,uid);audit(c,{'id':uid},'register','user',uid)
- response=JSONResponse({'user':{'id':uid,'username':username,'role':'user'}});response.set_cookie(SESSION_COOKIE,token,httponly=True,secure=os.environ.get('SESSION_SECURE','0')=='1',samesite='strict',max_age=SESSION_HOURS*3600,path='/');return response
+  uid=c.execute('SELECT id FROM users WHERE username=?',(username,)).fetchone()['id'];token=issue_session(c,uid);audit(c,{'id':uid},'register','user',uid,{'terms_accepted':True,'privacy_policy_acknowledged':True,'consented_at':now()})
+ response=JSONResponse({'user':{'id':uid,'username':username,'role':'user'}});response.set_cookie(SESSION_COOKIE,token,httponly=True,secure=os.environ.get('SESSION_SECURE','1')=='1',samesite='strict',max_age=SESSION_HOURS*3600,path='/');return response
 @app.post('/api/auth/login')
 async def login(request:Request):
  d=await body_json(request);username=str(d.get('username','')).strip();password=str(d.get('password',''))
@@ -288,7 +327,7 @@ async def login(request:Request):
   row=c.execute('SELECT * FROM users WHERE username=? AND active=1',(username,)).fetchone()
   if not row or not password_ok(password,row['password_hash']):raise HTTPException(401,'Invalid username or password')
   token=issue_session(c,row['id']);c.execute('UPDATE users SET last_login=? WHERE id=?',(now(),row['id']));audit(c,{'id':row['id']},'login','user',row['id'])
- response=JSONResponse({'user':user_obj({**dict(row),'last_login':now()})});response.set_cookie(SESSION_COOKIE,token,httponly=True,secure=os.environ.get('SESSION_SECURE','0')=='1',samesite='strict',max_age=SESSION_HOURS*3600,path='/');return response
+ response=JSONResponse({'user':user_obj({**dict(row),'last_login':now()})});response.set_cookie(SESSION_COOKIE,token,httponly=True,secure=os.environ.get('SESSION_SECURE','1')=='1',samesite='strict',max_age=SESSION_HOURS*3600,path='/');return response
 @app.post('/api/auth/logout')
 async def logout(request:Request):
  raw=request.cookies.get(SESSION_COOKIE,'');token=raw.rsplit('.',1)[0] if '.' in raw else ''
@@ -314,7 +353,34 @@ async def favorite(offer_id:str,request:Request):
   else:c.execute('DELETE FROM favorites WHERE user_id=? AND offer_id=?',(u['id'],offer_id))
  return {'offer_id':offer_id,'favorite':add}
 
+@app.delete('/api/auth/account')
+async def delete_account(request:Request):
+ u=await current_user(request,True)
+ with connect() as c:
+  audit(c,u,'account_delete','user',u['id'],{'requested_at':now()})
+  c.execute('DELETE FROM users WHERE id=?',(u['id'],))
+ response=JSONResponse({'ok':True,'message':'Account and associated favorites/sessions were deleted.'});response.delete_cookie(SESSION_COOKIE,path='/');return response
+
 async def admin_user(request:Request):return await current_user(request,True,True)
+
+@app.get('/api/admin/reports')
+async def admin_reports(request:Request,status:str='pending',limit:int=100,u=Depends(admin_user)):
+ with connect() as c:
+  if status=='all':rows=c.execute('SELECT * FROM reports ORDER BY id DESC LIMIT ?',(min(300,max(1,limit)),)).fetchall()
+  else:rows=c.execute('SELECT * FROM reports WHERE status=? ORDER BY id DESC LIMIT ?',(status,min(300,max(1,limit)))).fetchall()
+  return [dict(r) for r in rows]
+
+@app.patch('/api/admin/reports/{report_id}')
+async def update_report(report_id:int,request:Request,u=Depends(admin_user)):
+ d=await body_json(request);status=d.get('status')
+ if status not in ('pending','reviewing','resolved','dismissed'):raise HTTPException(400,'Invalid report status')
+ with connect() as c:
+  row=c.execute('SELECT * FROM reports WHERE id=?',(report_id,)).fetchone()
+  if not row:raise HTTPException(404,'Report not found')
+  c.execute('UPDATE reports SET status=?,updated_at=?,reviewed_by=? WHERE id=?',(status,now(),u['id'],report_id))
+  audit(c,u,'report_status','report',report_id,{'status':status,'report_type':row['report_type']})
+ return {'ok':True,'status':status}
+
 @app.post('/api/admin/login')
 async def admin_login(request:Request):
  # Shared login endpoint returns 403 to non-admin accounts, preventing role confusion.
@@ -324,7 +390,7 @@ async def admin_login(request:Request):
   if not row or not password_ok(password,row['password_hash']):raise HTTPException(401,'Invalid credentials')
   if row['role']!='admin':raise HTTPException(403,'Administrator role required')
   token=issue_session(c,row['id']);c.execute('UPDATE users SET last_login=? WHERE id=?',(now(),row['id']));audit(c,{'id':row['id']},'admin_login','user',row['id'])
- response=JSONResponse({'user':user_obj(row)});response.set_cookie(SESSION_COOKIE,token,httponly=True,secure=os.environ.get('SESSION_SECURE','0')=='1',samesite='strict',max_age=SESSION_HOURS*3600,path='/');return response
+ response=JSONResponse({'user':user_obj(row)});response.set_cookie(SESSION_COOKIE,token,httponly=True,secure=os.environ.get('SESSION_SECURE','1')=='1',samesite='strict',max_age=SESSION_HOURS*3600,path='/');return response
 @app.get('/api/admin/overview')
 async def admin_overview(request:Request,u=Depends(admin_user)):
  with connect() as c:
@@ -482,6 +548,48 @@ async def delete_source(source_id:int,request:Request,u=Depends(admin_user)):
    c.execute("UPDATE offers SET is_active=0,verification_status=CASE WHEN manual_status='approved' THEN verification_status ELSE 'pending' END,verification_reason='Source configuration was removed.',updated_at=? WHERE source_url=?",(now(),row['url']))
   audit(c,u,'source_delete','source',source_id,{'url':row['url']})
  return {'ok':True}
+@app.get('/api/admin/discoveries')
+async def admin_discoveries(request:Request,status:str='pending',u=Depends(admin_user)):
+ state_path=ROOT/'data'/'state.json'
+ try:state=json.loads(state_path.read_text(encoding='utf-8'))
+ except Exception:state={}
+ records=list((state.get('discovered_sources') or {}).values())
+ if status!='all':records=[r for r in records if r.get('status','pending')==status]
+ records.sort(key=lambda r:r.get('last_seen',''),reverse=True)
+ return records[:500]
+
+@app.post('/api/admin/discoveries/{discovery_id}/promote')
+async def promote_discovered_source(discovery_id:str,request:Request,u=Depends(admin_user)):
+ state_path=ROOT/'data'/'state.json'
+ try:state=json.loads(state_path.read_text(encoding='utf-8'))
+ except Exception:state={}
+ record=(state.get('discovered_sources') or {}).get(discovery_id)
+ if not record:raise HTTPException(404,'Discovery candidate not found')
+ url=str(record.get('url') or '')
+ if not is_public_http_url(url):raise HTTPException(400,'Candidate is not a valid public HTTP(S) URL')
+ with connect() as c:
+  existing=c.execute('SELECT id FROM sources WHERE url=? AND deleted_at IS NULL',(url,)).fetchone()
+  if existing:raise HTTPException(409,'This URL is already configured as a source')
+  try:c.execute('INSERT INTO sources(name,url,source_type,mall_id,settings,created_at) VALUES(?,?,?,?,?,?)',(str(record.get('title') or urlparse(url).netloc)[:160],url,'text',None,json.dumps({'discovered_via':record.get('discovered_via'),'discovery_id':discovery_id}),now()))
+  except sqlite3.IntegrityError:raise HTTPException(409,'This URL already exists in source history')
+  source_id=c.execute('SELECT id FROM sources WHERE url=?',(url,)).fetchone()['id']
+  audit(c,u,'discovery_promote','source',source_id,{'url':url,'discovery_id':discovery_id})
+ record['status']='approved_source';record['approved_at']=now();state['discovered_sources'][discovery_id]=record
+ state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2),encoding='utf-8')
+ return {'ok':True,'source_id':source_id,'status':record['status']}
+
+@app.post('/api/admin/discoveries/{discovery_id}/dismiss')
+async def dismiss_discovered_source(discovery_id:str,request:Request,u=Depends(admin_user)):
+ state_path=ROOT/'data'/'state.json'
+ try:state=json.loads(state_path.read_text(encoding='utf-8'))
+ except Exception:state={}
+ record=(state.get('discovered_sources') or {}).get(discovery_id)
+ if not record:raise HTTPException(404,'Discovery candidate not found')
+ record['status']='dismissed';record['dismissed_at']=now();state['discovered_sources'][discovery_id]=record
+ state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2),encoding='utf-8')
+ with connect() as c:audit(c,u,'discovery_dismiss','discovery',discovery_id,{'url':record.get('url')})
+ return {'ok':True}
+
 @app.get('/api/admin/malls')
 async def admin_malls(request:Request,u=Depends(admin_user)):
  with connect() as c:return [dict(r) for r in c.execute('SELECT * FROM malls ORDER BY name').fetchall()]
@@ -626,7 +734,7 @@ def build_runtime_sources():
     m['pages'].append({**settings,'url':sr['url'],'type':sr['source_type']})
    elif sr['source_type']=='sitemap':
     m.setdefault('sitemaps',[]).append({**settings,'url':sr['url']})
-  if not m['pages'] and not m.get('sitemaps') and not orig.get('pages') and not orig.get('sitemap'):continue
+  if not m['pages'] and not m.get('sitemaps') and not orig.get('pages') and not orig.get('sitemap') and not orig.get('search'):continue
   runtime.append(m)
  # Sources without a mall are collected under a clearly labelled discovery bucket.
  generic=[sr for sr in source_rows if sr['mall_id'] is None and sr['source_type'] in ('text','images','api')]
@@ -640,7 +748,7 @@ def build_runtime_sources():
   if sr['source_type']=='rss':
    settings=json.loads(sr['settings'] or '{}');feeds.append({**settings,'name':sr['name'],'url':sr['url']})
  # Preserve search discovery settings, but source URLs themselves are managed in the database.
- config={'malls':runtime,'feeds':feeds,'discovery_queries':base.get('discovery_queries',[]),'search_feed_templates':base.get('search_feed_templates',[])}
+ config={'malls':runtime,'feeds':feeds,'discovery_queries':base.get('discovery_queries',[]),'social_discovery_queries':base.get('social_discovery_queries',[]),'search_feed_templates':base.get('search_feed_templates',[])}
  target=ROOT/'data'/'runtime_sources.json';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(config,ensure_ascii=False,indent=2),encoding='utf-8')
  return target
 
@@ -674,6 +782,14 @@ async def retry_job(job_id:int,request:Request,u=Depends(admin_user)):
 def home():return FileResponse(ROOT/'web'/'index.html')
 @app.get('/admin')
 def admin_page():return FileResponse(ROOT/'web'/'admin.html')
+@app.get('/privacy')
+def privacy_page():return FileResponse(ROOT/'web'/'privacy.html')
+@app.get('/terms')
+def terms_page():return FileResponse(ROOT/'web'/'terms.html')
+@app.get('/cookies')
+def cookies_page():return FileResponse(ROOT/'web'/'cookies.html')
+@app.get('/report')
+def report_page():return FileResponse(ROOT/'web'/'report.html')
 @app.get('/{asset_path:path}')
 def static_asset(asset_path:str):
  if asset_path.startswith('api/'):raise HTTPException(404,'Not found')

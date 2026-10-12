@@ -44,4 +44,4 @@ python tests_api.py
 python -m py_compile api.py crawler/ai.py crawler/run.py
 ```
 
-See `README.md` for architecture, all environment variables, verification rules, and deployment limitations. No paid AI API keys are needed. Current source coverage is not exhaustive; add permitted official sources incrementally.
+See `README.md` for architecture, all environment variables, verification rules, and deployment limitations. No paid AI inference API keys are needed. Optional Google Programmable Search uses `GOOGLE_CSE_API_KEY` and `GOOGLE_CSE_ID` repository secrets. Without them, the collector checks configured official pages and any permitted RSS/API feeds you explicitly add; broad search/social discovery is not active. Current source coverage is not exhaustive; review discovered source candidates before promoting them. Run `python -m pip install -r requirements-dev.txt` and `python -m pytest -q browser_tests.py` for the Playwright suite.

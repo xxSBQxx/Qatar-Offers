@@ -55,11 +55,11 @@ def allowed(url, user_agent='QatarOffersBot'):
  try:return _ROBOTS[host].can_fetch(user_agent,url) and _ROBOTS[host].can_fetch('*',url)
  except Exception:return False
 
-def fetch(url, timeout=25, max_bytes=MAX_PAGE_BYTES, respect_robots=True):
+def fetch(url, timeout=15, max_bytes=MAX_PAGE_BYTES, respect_robots=True, retries=3):
  if respect_robots and not allowed(url):raise PermissionError(f'robots.txt disallows or URL is not public: {url}')
  if not public_url(url):raise PermissionError(f'private or non-public URL blocked: {url}')
  last=None
- for attempt in range(3):
+ for attempt in range(max(1,min(4,int(retries)))):
   current=url
   try:
    for _ in range(6):
@@ -86,7 +86,7 @@ def fetch(url, timeout=25, max_bytes=MAX_PAGE_BYTES, respect_robots=True):
   except (requests.RequestException,ValueError,PermissionError) as e:
    last=e
    if isinstance(e,PermissionError):raise
-   if attempt<2:time.sleep(2**attempt)
+   if attempt<max(1,min(4,int(retries)))-1:time.sleep(2**attempt)
  raise last or RuntimeError('fetch failed')
 
 def text_of(soup):
@@ -131,10 +131,10 @@ def sitemap_urls(spec):
   return list(dict.fromkeys(u for u in locs if contains in u and not u.endswith('.xml')))[:int(spec.get('max_urls',30))]
  except Exception as exc:print('sitemap skipped:',str(exc)[:180]);return []
 
-def feed_entries(url):
+def feed_entries(url,timeout=10,retries=1):
  """Read RSS/Atom with the standard XML parser; feed URLs must be configured."""
  try:
-  r=fetch(url);root=ET.fromstring(r.content);out=[]
+  r=fetch(url,timeout=timeout,max_bytes=2_000_000,retries=retries);root=ET.fromstring(r.content);out=[]
   for item in [e for e in root.iter() if e.tag.rsplit('}',1)[-1].lower() in ('item','entry')][:100]:
    fields={e.tag.rsplit('}',1)[-1].lower():e for e in list(item)}
    title_el=fields.get('title');desc_el=fields.get('description') or fields.get('summary') or fields.get('content');link_el=fields.get('link')
@@ -145,6 +145,22 @@ def feed_entries(url):
    if href.startswith('http'):out.append({'title':title,'url':href,'description':desc})
   return out
  except Exception as exc:print('feed skipped:',str(exc)[:160]);return []
+
+def google_cse_entries(queries):
+ """Optional official Google Programmable Search API. Results are leads only; no result is auto-trusted."""
+ key=os.environ.get('GOOGLE_CSE_API_KEY','').strip();cx=os.environ.get('GOOGLE_CSE_ID','').strip()
+ if not key or not cx:return []
+ out=[];max_queries=max(1,min(20,int(os.environ.get('GOOGLE_CSE_MAX_QUERIES','20'))))
+ for query in list(dict.fromkeys(queries))[:max_queries]:
+  try:
+   response=_SESSION.get('https://www.googleapis.com/customsearch/v1',params={'key':key,'cx':cx,'q':query,'num':10,'gl':'qa','cr':'countryQA'},headers=UA,timeout=15)
+   response.raise_for_status();payload=response.json()
+   for item in payload.get('items',[]):
+    link=item.get('link');title=' '.join(str(item.get('title') or '').split())[:300];snippet=' '.join(str(item.get('snippet') or '').split())[:1000]
+    if isinstance(link,str) and urlparse(link).scheme in ('http','https') and public_url(link):
+     out.append({'title':title,'url':link,'description':snippet,'feed_name':'Google Programmable Search','query':query,'trusted':False})
+  except Exception as exc:print('Google Programmable Search skipped:',str(exc)[:180])
+ return out
 
 def clean_date(v):
  try:return dt.date.fromisoformat(v).isoformat() if isinstance(v,str) else None
@@ -158,7 +174,6 @@ def normalize(raw,today):
  if not store or not title:return None
  start,end=clean_date(raw.get('start_date')),clean_date(raw.get('end_date'))
  if end and end<today:return None
- if start and start>today:return None
  if start and end and start>end:return None
  url=raw.get('source_url')
  if not isinstance(url,str) or not re.match(r'^https?://',url):return None
@@ -225,7 +240,7 @@ def add_offers(state,mall,offers,source_url,branch,today,source_cfg,verified_sou
 def main(root=ROOT):
  root=pathlib.Path(root);nowdt=dt.datetime.now(QATAR);today=nowdt.date().isoformat()
  cfg=jload(pathlib.Path(os.environ.get('SOURCES_CONFIG_PATH', root/'sources.json')),{'malls':[]});state=jload(root/'data/state.json',{})
- for k in ('pages','images','searched','offers','jobs','sources'):state.setdefault(k,{})
+ for k in ('pages','images','searched','offers','jobs','sources','discovered_sources'):state.setdefault(k,{})
  status=[];new_images=0;failures=[];configured_urls=[];seen_ids=set();removed_candidates=set();source_checks={}
  # Configured official mall and retailer sources.
  for mall in cfg.get('malls',[]):
@@ -272,7 +287,7 @@ def main(root=ROOT):
         old['last_checked_at']=nowdt.isoformat(timespec='seconds');continue
        mime=(ir.headers.get('content-type') or 'image/jpeg').split(';')[0]
        offers=ai.image_offers(ir.content,mime,context+' '+alt,mall['name'],page.get('branch'),today,url)
-       for offer in offers: offer['image_url']=image_url
+       for offer in offers: offer['image_url']=image_url if page.get('display_images') is True else None
        ids=add_offers(state,mall,offers,url,page.get('branch'),today,url,True);seen_ids.update(ids)
        if old:
         for prior_id in old.get('offer_ids',[]):
@@ -306,16 +321,37 @@ def main(root=ROOT):
  # Configured RSS/Atom sources; entries are candidates, not automatically trusted/published.
  discovery=[]
  for feed in cfg.get('feeds',[]):
-  entries=feed_entries(feed.get('url',''))
+  entries=feed_entries(feed.get('url',''),timeout=10,retries=1)
   source_checks[feed.get('url','')]={'checked_at':nowdt.isoformat(timespec='seconds'),'status':'ok' if entries else 'empty','error':None}
   for entry in entries:discovery.append({**entry,'feed_name':feed.get('name','RSS discovery'),'trusted':False})
- # Optional public search feeds (explicitly configured); results remain pending until a configured official page confirms them.
+ # Public search RSS queries rotate each six-hour window to bound collection time while covering all categories over time.
+ search_queries=list(cfg.get('discovery_queries',[]))+list(cfg.get('social_discovery_queries',[]))
+ query_limit=max(1,min(20,int(os.environ.get('RSS_SEARCH_QUERIES_PER_RUN','8'))))
+ if search_queries:
+  start_index=int(nowdt.timestamp()//(6*3600))%len(search_queries)
+  search_queries=[search_queries[(start_index+i)%len(search_queries)] for i in range(min(query_limit,len(search_queries)))]
  for template in cfg.get('search_feed_templates',[]):
-  for query in cfg.get('discovery_queries',[]):
+  for query in search_queries:
    try:
     url=template.format(query=quote_plus(query))
-    for entry in feed_entries(url):discovery.append({**entry,'feed_name':'Search RSS','trusted':False})
+    for entry in feed_entries(url,timeout=10,retries=1):discovery.append({**entry,'feed_name':'Search RSS','query':query,'trusted':False})
    except Exception as exc:failures.append({'url':str(template),'error':str(exc)[:200]})
+ # Official Google Search API is optional. Never scrape result pages or bypass access controls.
+ cse_queries=[f'Qatar offers promotions {m.get("name", "")}' for m in cfg.get('malls',[]) if m.get('search')]
+ cse_queries += list(cfg.get('social_discovery_queries',[]))
+ cse_queries += list(cfg.get('discovery_queries',[]))
+ discovery.extend(google_cse_entries(cse_queries))
+ # Store discovery leads for administrator review before a URL is promoted to a trusted source.
+ for candidate in discovery:
+  url=candidate.get('url','')
+  if not isinstance(url,str) or not public_url(url):continue
+  sid=hashlib.sha256(url.encode()).hexdigest()[:20]
+  previous=state['discovered_sources'].get(sid,{})
+  state['discovered_sources'][sid]={**previous,'id':sid,'url':url,'title':candidate.get('title') or previous.get('title') or urlparse(url).netloc,'description':candidate.get('description') or previous.get('description'),'discovered_via':candidate.get('feed_name','RSS discovery'),'query':candidate.get('query') or previous.get('query'),'first_seen':previous.get('first_seen',nowdt.isoformat(timespec='seconds')),'last_seen':nowdt.isoformat(timespec='seconds'),'status':previous.get('status','pending')}
+ # Bound the persistent review queue so a noisy feed cannot grow the state file indefinitely.
+ if len(state['discovered_sources'])>1000:
+  ordered=sorted(state['discovered_sources'].items(),key=lambda pair:pair[1].get('last_seen',''),reverse=True)
+  state['discovered_sources']=dict(ordered[:1000])
  for candidate in discovery[:int(os.environ.get('MAX_DISCOVERY_ITEMS','100'))]:
   url=candidate['url']
   if url in configured_urls:continue
@@ -351,7 +387,7 @@ def main(root=ROOT):
  live=[o for o in state['offers'].values() if o.get('is_active') and o.get('verification_status')=='verified']
  live.sort(key=lambda o:(o.get('end_date') or '9999-12-31',o.get('store_name','').casefold()))
  jsave(root/'web/offers.json',{'updated':nowdt.isoformat(timespec='seconds'),'timezone':'Asia/Qatar','status':status,'counts':{'active':len(live),'pending':sum(1 for o in state['offers'].values() if o.get('verification_status')=='pending'),'expired':sum(1 for o in state['offers'].values() if o.get('verification_status')=='expired')},'offers':[{k:o.get(k) for k in public_fields} for o in live]})
- jsave(root/'web/malls.json',[{k:m.get(k) for k in ('id','name','name_ar','area')} for m in cfg.get('malls',[])])
+ jsave(root/'web/malls.json',[{k:m.get(k) for k in ('id','name','name_ar','area','website')} for m in cfg.get('malls',[])])
  jsave(root/'data/state.json',state)
  print(f"done: {len(live)} verified active offers; {state['jobs']['last_run']['discovery_candidates']} discovery candidates; {len(failures)} source failures")
  return state['jobs']['last_run']

@@ -1,6 +1,6 @@
 // Network-first app shell. API responses are never cached; the UI filters stale saved offers.
-const CACHE = "qatar-offers-v3";
-const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "admin.html"];
+const CACHE = "qatar-offers-v4";
+const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "admin.html", "browse.html", "privacy.html", "terms.html", "cookies.html", "report.html"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
   self.skipWaiting();
