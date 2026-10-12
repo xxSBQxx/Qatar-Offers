@@ -51,6 +51,10 @@ jobs:
           TZ: Asia/Qatar
           CRAWLER_SLEEP: "2"
           MAX_NEW_IMAGES: "25"
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+          GOOGLE_CSE_MAX_QUERIES: "20"
+          RSS_SEARCH_QUERIES_PER_RUN: "8"
         run: |
           set -euo pipefail
           git config user.name "offers-bot"
