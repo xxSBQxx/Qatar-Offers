@@ -1,0 +1,82 @@
+{
+  "malls": [
+    {
+      "id": "mall-of-qatar",
+      "name": "Mall of Qatar",
+      "name_ar": "مول قطر",
+      "area": "Al Rayyan",
+      "pages": [
+        {
+          "url": "https://www.mallofqatar.com.qa/en/events/qatar-mega-sale",
+          "type": "text"
+        }
+      ],
+      "sitemap": {
+        "url": "https://www.mallofqatar.com.qa/sitemap.xml",
+        "contains": "/en/events/"
+      },
+      "search": false
+    },
+    {
+      "id": "city-center",
+      "name": "City Center Doha",
+      "name_ar": "سيتي سنتر الدوحة",
+      "area": "West Bay",
+      "pages": [
+        {
+          "url": "https://citycenterdoha.com/brands-for-less/",
+          "type": "text"
+        }
+      ],
+      "search": false
+    },
+    {
+      "id": "ezdan-mall",
+      "name": "Ezdan Mall",
+      "name_ar": "إيزدان مول",
+      "area": "Al Gharaffa, Al Wakra, Al Wukair",
+      "pages": [
+        {
+          "url": "https://gharrafa.ezdanmall.qa/promotions",
+          "type": "images",
+          "branch": "Al Gharaffa",
+          "image_contains": "/uploads/",
+          "context_must": "Promotion"
+        },
+        {
+          "url": "https://wakra.ezdanmall.qa/promotions",
+          "type": "images",
+          "branch": "Al Wakra",
+          "image_contains": "/uploads/",
+          "context_must": "Promotion"
+        },
+        {
+          "url": "https://wukair.ezdanmall.qa/promotions",
+          "type": "images",
+          "branch": "Al Wukair",
+          "image_contains": "/uploads/",
+          "context_must": "Promotion"
+        }
+      ],
+      "search": false
+    }
+  ],
+  "feeds": [
+    {
+      "name": "Qatar mall offer news search (English)",
+      "url": "https://news.google.com/rss/search?q=Qatar+mall+offers+promotions&hl=en&gl=QA&ceid=QA:en"
+    },
+    {
+      "name": "Qatar retail offers news search (Arabic)",
+      "url": "https://news.google.com/rss/search?q=%D8%B9%D8%B1%D9%88%D8%B6+%D9%82%D8%B7%D8%B1+%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A7%D8%AA&hl=ar&gl=QA&ceid=QA:ar"
+    }
+  ],
+  "discovery_queries": [
+    "Qatar mall promotions offers",
+    "Qatar store discounts this week",
+    "عروض قطر خصومات المجمعات"
+  ],
+  "search_feed_templates": [
+    "https://news.google.com/rss/search?q={query}&hl=en&gl=QA&ceid=QA:en"
+  ]
+}
