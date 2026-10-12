@@ -7,7 +7,7 @@
 
 - Python compilation: passed for `api.py`, `crawler/ai.py`, `crawler/run.py`, `tests_api.py`, and `browser_tests.py`.
 - API/auth/database smoke suite (`python tests_api.py`): passed, including authentication and roles, verified-only listing, expiry/staleness filtering, manual review preservation, source management, schedule settings, source discovery approval/dismissal, report intake/status workflow, account consent, account deletion, and policy routes.
-- Collector suite (`python crawler/test_run.py`): passed for local extraction, deduplication, verification state, expiry, and preservation of manual corrections.
+- Collector suite (`python crawler/test_run.py`): passed for local extraction, deduplication, verification state, expiry, preservation of manual corrections, and the new neutral-attribution path for aggregator sources.
 - Playwright browser suite (`python -m pytest -q browser_tests.py`): **2 passed** using Chromium and in-memory API fixtures. It checks responsive layout, mall directory, search, offer details/source links, cookie choices, policy pages, report form, and admin discovery/report sections. The offer used in browser tests is a test-only fixture and is not written to production data.
 - HTML/inline JavaScript audit: passed; no duplicate HTML IDs or JavaScript syntax errors found.
 - GitHub Actions YAML parsing: passed for the collection/deployment workflow and CI workflow.
@@ -16,11 +16,11 @@
 
 A live collector run was attempted in an isolated copy, but source requests did not complete within the environment's timeout. The collector observed that Google News RSS endpoints were disallowed by robots checks; those feeds/templates were removed instead of bypassing the restriction. No real offer was fabricated or added as a result of this attempt. `web/offers.json` is intentionally empty until a scheduled/manual run successfully collects and verifies real source data.
 
-The local Playwright CLI screenshot command could not complete because the execution environment's Chromium policy returned `ERR_BLOCKED_BY_ADMINISTRATOR` for direct browser navigation. A Playwright CLI screenshot smoke test is included in `.github/workflows/ci.yml` for execution on a normal GitHub-hosted runner. The Python Playwright browser suite did run and pass locally.
+The Playwright CLI screenshot command could not run locally because the expected Chromium headless-shell executable is not installed in this runtime. The CLI smoke test remains configured in `.github/workflows/ci.yml`; install Chromium with `python -m playwright install chromium` before running it locally. The Python Playwright browser suite did run and pass locally.
 
 ## Design skill availability
 
-Taste-Skill was not exposed as an available tool/plugin in this execution environment, so it was not invoked. The existing design was directly updated to a minimal Qatar-branded visual system with responsive mall/merchant directories, accessible controls, visible focus states, Arabic/RTL support, and reduced-motion handling. This report does not claim Taste-Skill was used.
+Taste-Skill documentation was reviewed for the requested minimalist/redesign direction, but the external skill could not be installed through the available runtime (the package command timed out). Implementation retains the existing Qatar-branded design and follows a restrained visual system with responsive directories, accessible controls, visible focus states, Arabic/RTL support, and reduced-motion handling. The external skill was not executed locally.
 
 ## Credentials and launch requirements
 
@@ -29,3 +29,10 @@ Taste-Skill was not exposed as an available tool/plugin in this execution enviro
 - GitHub Pages hosts only the static website/data. Authentication, admin workflows, persistent database features, report submission, and scheduling require the FastAPI backend.
 - The seeded directory includes 13 mall entries; not every mall currently has a validated direct source page. Source coverage is not exhaustive.
 - Privacy, terms, cookies, refund, and rights-request pages are cautious templates, not legal advice or a compliance certification. Publish the actual operator identity and monitored contact channel and obtain qualified Qatar legal review before public launch.
+
+## Source and AI scope
+
+- Added D4D Qatar's Doha offers page as a configured public aggregator source and expanded search discovery queries for D4D, Carrefour, LuLu, and mall/store branch evidence. Collection remains subject to robots.txt, rate limits, and each site's terms.
+- Added explicit `web_sources` handling to the collector. Aggregator offers are stored in the neutral `Web discovery` bucket, with no assumed mall/branch, and remain pending for review rather than becoming active automatically.
+- The current extractor is rules-based with optional OCR; this release does not fine-tune a model, train embeddings, or claim a self-learning LLM. Admin corrections are preserved and reviewable, but a measured feedback-learning loop, hosted RAG/LLM integration, and exhaustive automatic store/branch discovery remain future work. No offer data was fabricated.
+- Live requests to D4D and all configured sources were not validated during this run. `web/offers.json` remains empty until an allowed source yields evidence that passes extraction and verification.

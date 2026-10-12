@@ -1,0 +1,161 @@
+{
+  "malls": [
+    {
+      "id": "al-hazm",
+      "name": "Al Hazm",
+      "name_ar": "الحزم",
+      "area": "Al Markhiya",
+      "pages": [
+        {
+          "url": "https://www.alhazm.com/en/home",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "al-khor-mall",
+      "name": "Al Khor Mall",
+      "name_ar": "الخور مول",
+      "area": "Al Khor",
+      "pages": []
+    },
+    {
+      "id": "city-center-doha",
+      "name": "City Center Doha",
+      "name_ar": "سيتي سنتر الدوحة",
+      "area": "West Bay",
+      "pages": [
+        {
+          "url": "https://citycenterdoha.com/",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "doha-festival-city",
+      "name": "Doha Festival City",
+      "name_ar": "دوحة فستيفال سيتي",
+      "area": "Umm Salal Mohammed",
+      "pages": [
+        {
+          "url": "https://www.dohafestivalcity.com/home/",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "doha-oasis",
+      "name": "Doha Oasis",
+      "name_ar": "دوحة أواسيس",
+      "area": "Msheireb",
+      "pages": []
+    },
+    {
+      "id": "ezdan-mall",
+      "name": "Ezdan Mall",
+      "name_ar": "إزدان مول",
+      "area": "Al Gharaffa, Al Wakra, Al Wukair",
+      "pages": [
+        {
+          "url": "https://ezdanmall.qa/",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "gulf-mall",
+      "name": "Gulf Mall",
+      "name_ar": "جلف مول",
+      "area": "Al Gharrafa",
+      "pages": []
+    },
+    {
+      "id": "landmark-mall",
+      "name": "Landmark Mall",
+      "name_ar": "لاند مارك مول",
+      "area": "Al Gharrafa",
+      "pages": []
+    },
+    {
+      "id": "mall-of-qatar",
+      "name": "Mall of Qatar",
+      "name_ar": "مول قطر",
+      "area": "Al Rayyan",
+      "pages": [
+        {
+          "url": "https://www.mallofqatar.com.qa/en/home-v2",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "place-vendome",
+      "name": "Place Vendôme",
+      "name_ar": "بلاس فاندوم",
+      "area": "Lusail",
+      "pages": [
+        {
+          "url": "https://placevendomeqatar.com/",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "tawar-mall",
+      "name": "Tawar Mall",
+      "name_ar": "توار مول",
+      "area": "Al Markhiya",
+      "pages": [
+        {
+          "url": "https://www.tawarmall.qa/",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "the-gate-mall",
+      "name": "The Gate Mall",
+      "name_ar": "ذا جيت مول",
+      "area": "West Bay",
+      "pages": []
+    },
+    {
+      "id": "villaggio-mall",
+      "name": "Villaggio Mall",
+      "name_ar": "فيلاجيو مول",
+      "area": "Aspire Zone",
+      "pages": [
+        {
+          "url": "https://www.villaggioqatar.com/en",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "feeds": [],
+  "discovery_queries": [
+    "Qatar mall store directory branch official offers",
+    "Qatar retailer offers Lulu Hypermarket official offers",
+    "Qatar retailer offers Carrefour Qatar official weekly offers",
+    "site:d4donline.com/en/qatar/doha/offers Qatar offers flyers LuLu Carrefour Al Meera Safari Hypermarket",
+    "Qatar shopping mall offers promotions discounts",
+    "Qatar store discounts sale promotions",
+    "Qatar restaurant offers deals discounts",
+    "Qatar supermarket offers promotions",
+    "Qatar electronics offers discounts",
+    "Qatar fashion brands sale Qatar",
+    "Qatar hotel offers packages discounts",
+    "Qatar entertainment offers tickets discounts",
+    "عروض قطر خصومات المجمعات",
+    "عروض المطاعم قطر خصومات",
+    "عروض السوبرماركت قطر",
+    "خصومات المتاجر قطر"
+  ],
+  "social_discovery_queries": [
+    "site:instagram.com Qatar offers discounts promotions",
+    "site:facebook.com Qatar mall store offers discounts",
+    "site:tiktok.com Qatar offers promotions",
+    "site:x.com Qatar offers discounts"
+  ],
+  "search_feed_templates": []
+}

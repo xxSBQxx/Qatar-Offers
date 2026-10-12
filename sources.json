@@ -160,6 +160,10 @@
   ],
   "feeds": [],
   "discovery_queries": [
+    "Qatar mall store directory branch official offers",
+    "Qatar retailer offers Lulu Hypermarket official offers",
+    "Qatar retailer offers Carrefour Qatar official weekly offers",
+    "site:d4donline.com/en/qatar/doha/offers Qatar offers flyers LuLu Carrefour Al Meera Safari Hypermarket",
     "Qatar shopping mall offers promotions discounts",
     "Qatar store discounts sale promotions",
     "Qatar restaurant offers deals discounts",
@@ -183,5 +187,15 @@
     "site:facebook.com Qatar mall store offers discounts",
     "site:tiktok.com Qatar offers promotions",
     "site:x.com Qatar offers discounts"
+  ],
+  "web_sources": [
+    {
+      "id": "d4d-qatar-doha",
+      "name": "D4D Qatar Offers",
+      "url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "type": "aggregator",
+      "coverage": "Qatar-wide / merchant-specific as stated by each flyer",
+      "notes": "Third-party flyer index. Treat each flyer as a discovery lead; never infer a mall branch from aggregator placement. Follow original merchant/source links when available."
+    }
   ]
 }

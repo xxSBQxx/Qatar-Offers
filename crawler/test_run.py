@@ -66,5 +66,15 @@ state3=json.loads((root3/'data/state.json').read_text(encoding='utf-8'));record=
 assert record['title']=='Administrator corrected title' and record['description']=='Administrator corrected description',record
 assert record['verification_status']=='pending' and not record['is_active'],record
 assert len(state3['offers'])==1,state3['offers']
+# Non-mall aggregator sources stay in the neutral discovery bucket; never infer a mall branch.
+root4=pathlib.Path(tempfile.mkdtemp())
+(root4/'sources.json').write_text(json.dumps({'malls':[],'web_sources':[{'id':'test-aggregator','name':'Test flyer aggregator','url':'https://aggregator.example/offers'}]}),encoding='utf-8')
+page4={'html':'<html><body><h1>Weekly offers</h1><p>BrandX up to 30% off</p><p>Valid until 31 Dec 2027</p></body></html>'}
+run.fetch=lambda url,**kwargs:Response(page4['html'],url)
+run.main(root4)
+out4=json.loads((root4/'data/state.json').read_text(encoding='utf-8'))
+records=list(out4['offers'].values())
+assert records and all(o['mall_id']=='web-discovery' and o['mall_name']=='Web discovery' for o in records),out4
+assert all(o['verification_status']=='pending' and not o['is_active'] for o in records),out4
 run.fetch,run.allowed,run.feed_entries=original_fetch,original_allowed,original_feeds
-print('all local extraction, deduplication, verification, expiry and manual-correction tests passed')
+print('all local extraction, deduplication, verification, expiry, manual-correction and aggregator-attribution tests passed')

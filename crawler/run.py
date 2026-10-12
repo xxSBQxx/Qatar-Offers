@@ -318,6 +318,30 @@ def main(root=ROOT):
      if image_record.get('page_url')==url:removed_candidates.update(image_record.get('offer_ids',[]))
     failures.append({'url':url,'error':str(exc)[:240]})
   status.append({'id':mall.get('id'),'name':mall.get('name'),'checked_at':nowdt.isoformat(timespec='seconds'),'sources':source_status})
+ # Explicit non-mall public sources (e.g. flyer aggregators) are collected into a
+ # neutral discovery bucket. They are NOT assigned to a physical mall/branch.
+ for source in cfg.get('web_sources',[]):
+  url=source.get('url','')
+  if not isinstance(url,str) or not url:continue
+  try:
+   response=fetch(url);soup=BeautifulSoup(response.text,'html.parser');text=text_of(soup)
+   page_hash=hashlib.sha256(text.encode()).hexdigest();old=state['pages'].get(url)
+   if old and old.get('hash')==page_hash:
+    for oid in old.get('offer_ids',[]):
+     if oid in state['offers']:touch_offer(state,oid,today,nowdt);seen_ids.add(oid)
+   else:
+    offers=ai.text_offers(text,'Web discovery',response.url,today)
+    for offer in offers:
+     offer['source_url']=response.url
+     offer['description']=((offer.get('description') or '')+' Source: '+str(source.get('name','Public web source'))).strip()
+    bucket={'id':'web-discovery','name':'Web discovery'}
+    ids=add_offers(state,bucket,offers,response.url,None,today,{},False);seen_ids.update(ids)
+    if old:removed_candidates.update(prior_id for prior_id in old.get('offer_ids',[]) if prior_id not in ids)
+    state['pages'][url]={'hash':page_hash,'offer_ids':ids,'last_checked_at':nowdt.isoformat(timespec='seconds'),'source_name':source.get('name')}
+   status.append({'id':source.get('id','web-source'),'name':source.get('name') or urlparse(url).netloc,'checked_at':nowdt.isoformat(timespec='seconds'),'sources':[{'title':source.get('name') or urlparse(url).netloc,'url':url,'status':'ok','kind':'aggregator','branch_attribution':'not_assumed'}]})
+  except Exception as exc:
+   status.append({'id':source.get('id','web-source'),'name':source.get('name') or urlparse(url).netloc,'checked_at':nowdt.isoformat(timespec='seconds'),'sources':[{'title':source.get('name') or urlparse(url).netloc,'url':url,'status':'error','error':str(exc)[:240]}]})
+   failures.append({'url':url,'error':str(exc)[:240]})
  # Configured RSS/Atom sources; entries are candidates, not automatically trusted/published.
  discovery=[]
  for feed in cfg.get('feeds',[]):
