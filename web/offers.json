@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-13T08:38:00+03:00",
+  "updated": "2026-10-13T16:38:36+03:00",
   "timezone": "Asia/Qatar",
   "status": [
     {
       "id": "mall-of-qatar",
       "name": "Mall of Qatar",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "www.mallofqatar.com.qa/en/home-v2",
@@ -17,7 +17,7 @@
     {
       "id": "doha-festival-city",
       "name": "Doha Festival City",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "www.dohafestivalcity.com/home/",
@@ -29,7 +29,7 @@
     {
       "id": "place-vendome",
       "name": "Place Vendôme",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "placevendomeqatar.com/",
@@ -41,7 +41,7 @@
     {
       "id": "villaggio-mall",
       "name": "Villaggio Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "www.villaggioqatar.com/en",
@@ -54,7 +54,7 @@
     {
       "id": "city-center-doha",
       "name": "City Center Doha",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "citycenterdoha.com/",
@@ -66,7 +66,7 @@
     {
       "id": "ezdan-mall",
       "name": "Ezdan Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "ezdanmall.qa/",
@@ -78,7 +78,7 @@
     {
       "id": "tawar-mall",
       "name": "Tawar Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "www.tawarmall.qa/",
@@ -90,7 +90,7 @@
     {
       "id": "al-hazm",
       "name": "Al Hazm",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "www.alhazm.com/en/home",
@@ -102,37 +102,37 @@
     {
       "id": "gulf-mall",
       "name": "Gulf Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": []
     },
     {
       "id": "landmark-mall",
       "name": "Landmark Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": []
     },
     {
       "id": "the-gate-mall",
       "name": "The Gate Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": []
     },
     {
       "id": "doha-oasis",
       "name": "Doha Oasis",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": []
     },
     {
       "id": "al-khor-mall",
       "name": "Al Khor Mall",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": []
     },
     {
       "id": "d4d-qatar-doha",
       "name": "D4D Qatar Offers",
-      "checked_at": "2026-10-13T08:38:00+03:00",
+      "checked_at": "2026-10-13T16:38:36+03:00",
       "sources": [
         {
           "title": "D4D Qatar Offers",
@@ -146,7 +146,7 @@
   ],
   "counts": {
     "active": 19,
-    "pending": 125,
+    "pending": 126,
     "expired": 0
   },
   "offers": [
@@ -171,8 +171,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -196,8 +196,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -221,8 +221,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -246,8 +246,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -271,8 +271,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -296,8 +296,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -321,8 +321,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -346,8 +346,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -371,8 +371,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:37+03:00",
+      "last_checked_at": "2026-10-13T16:38:37+03:00",
       "is_active": true
     },
     {
@@ -396,8 +396,33 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
+      "is_active": true
+    },
+    {
+      "id": "cbaf9f59889a906a7a48",
+      "store_name": "Mall promotion",
+      "mall_name": "Place Vendôme",
+      "title": "Shopping Mall in Doha, Qatar | Place Vendôme Open Now – 10 am to 11 pm Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still and",
+      "title_ar": null,
+      "description": "Shopping Mall in Doha, Qatar | Place Vendôme Open Now – 10 am to 11 pm Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it SEASONAL SPOTLIGHT BRAND SHOWCASE MORE BRANDS MORE BRANDS STAY UPDATED WITH LATEST",
+      "discount_text": "0 %",
+      "category": "food",
+      "start_date": null,
+      "end_date": null,
+      "source_url": "https://placevendomeqatar.com/",
+      "language": "ar",
+      "origin": "local_extractor",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "verification_status": "verified",
+      "verified_at": "2026-10-13T16:38:41+03:00",
+      "last_checked_at": "2026-10-13T16:38:41+03:00",
       "is_active": true
     },
     {
@@ -421,8 +446,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -446,8 +471,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -471,8 +496,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -496,8 +521,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -521,8 +546,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -546,8 +571,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -571,8 +596,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     },
     {
@@ -596,33 +621,8 @@
       "terms": null,
       "redemption_instructions": null,
       "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:00+03:00",
-      "last_checked_at": "2026-10-13T08:38:00+03:00",
-      "is_active": true
-    },
-    {
-      "id": "1d7f3a75f2c7c4530871",
-      "store_name": "Mall promotion",
-      "mall_name": "Place Vendôme",
-      "title": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 11 pm Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still",
-      "title_ar": null,
-      "description": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 11 pm Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it SEASONAL SPOTLIGHT BRAND SHOWCASE MORE BRANDS MORE BRANDS STAY UPDATED WITH LAT",
-      "discount_text": "0 %",
-      "category": "food",
-      "start_date": null,
-      "end_date": null,
-      "source_url": "https://placevendomeqatar.com/",
-      "language": "ar",
-      "origin": "local_extractor",
-      "image_url": null,
-      "original_price": null,
-      "sale_price": null,
-      "promo_code": null,
-      "terms": null,
-      "redemption_instructions": null,
-      "verification_status": "verified",
-      "verified_at": "2026-10-13T08:38:07+03:00",
-      "last_checked_at": "2026-10-13T08:38:07+03:00",
+      "verified_at": "2026-10-13T16:38:36+03:00",
+      "last_checked_at": "2026-10-13T16:38:36+03:00",
       "is_active": true
     }
   ]
