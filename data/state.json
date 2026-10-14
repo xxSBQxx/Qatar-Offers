@@ -1,7 +1,7 @@
 {
   "pages": {
     "https://www.mallofqatar.com.qa/en/home-v2": {
-      "hash": "172c58b87da46000555d1cd2061aca1478508883bce2f6d7783e8133c49369c5",
+      "hash": "3b7535be9db78ccce9d4a434b61c20ae5199b214d8057f97f142bfbfea61330d",
       "offer_ids": [
         "71b587d48c1e8f2a7d16",
         "d41949a4bea529252c8d",
@@ -13,7 +13,7 @@
         "f3757f09052bcbd3b03c",
         "99e58185dac03231906e"
       ],
-      "last_checked_at": "2026-10-14T14:16:20+03:00"
+      "last_checked_at": "2026-10-15T00:19:31+03:00"
     },
     "https://www.dohafestivalcity.com/home/": {
       "hash": "2c5ecf0d94224a65980d386bf42f23e36b2b52f2a7cff540455377936c123962",
@@ -56,96 +56,83 @@
       "last_checked_at": "2026-10-12T13:02:49+03:00"
     },
     "https://www.alhazm.com/en/home": {
-      "hash": "6faeb1d99989edbd5e46cd97af0550b8e7bbc1c846990841840e9e28856bbc41",
+      "hash": "ca87ea5522dea5d5be98fc2b9229cf262f50f45a3c7d413b8b4b5b1a6aec98d6",
       "offer_ids": [],
-      "last_checked_at": "2026-10-14T19:37:24+03:00"
+      "last_checked_at": "2026-10-15T00:19:31+03:00"
     },
     "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com": {
-      "hash": "730a54d4ec7ce1a0ec1fac3483d01a809d5c6e764a97378b48f08404963502e5",
+      "hash": "0f3a02e001e76150fab7b7fea51daf5d6112dd8738754511eb94779b8ae5621d",
       "offer_ids": [
-        "e0cea728d61720a3da15",
-        "7cdc5858ec3b32ad0212",
-        "9d50e9e5b9fb2b4382cc",
-        "f7753ca262737db1887b",
-        "7375a722c66e9e197e77",
-        "562b7100cb387d9d6da9",
-        "4636b6934223fedf784b",
-        "3c25fb5e791cbef147cc",
         "826ea652b10f3352a5de",
+        "7cdc5858ec3b32ad0212",
+        "a78b23caba91a5824f7e",
+        "f7753ca262737db1887b",
+        "7133e50bc586740ac2d5",
+        "d172ce118a496a7ac2b3",
+        "b1c6baaecd51a1986920",
         "3e8a2aaf0799fc0a9525",
-        "ed0d12ac20286d21c568",
-        "2a84b392936163c74374",
-        "69e02d9d88038b9343ed",
+        "a3e350609ec63207ddbc",
+        "13c7773083c71f896fab",
+        "aee8e09e52349ac4e8ff",
         "c6a719030660627b09ec",
-        "7302628acb016ddfe92c",
-        "9475cec8fe658ffaa094",
-        "1ab758a062dc5340bca7",
-        "3af2cd6f1b6a027eeb7d",
-        "79b90beae520736820cb",
+        "3741228fbc6323bfa020",
+        "dcc2923d78121557a867",
+        "f93634aef198e16cb9ad",
+        "0622c0e95a685f7bb655",
+        "ad21982bf20d543a622e",
         "84bfa7886cb2d3f81cc2",
         "c05fc045cddabb4c8ca9",
-        "1e94d99391366361bf8a",
-        "8a5122465ff09079a860",
-        "d7eff0aeecac79f3c48e",
+        "aa7f8041f0af4f93ce5c",
+        "72e5996da6655fb7338c",
+        "1ffb7c85164b28ca821a",
+        "fac5d88d7d4715f940ae",
+        "b4430f101d479f4b9deb",
+        "3c25fb5e791cbef147cc",
+        "a12839f864c0331d1405",
         "6f4336becba5f52da5d0",
-        "aaa150b2409879499321",
-        "c7498e0cd536dc059ece",
-        "028250f60831afe078e9",
-        "6b8dff1711b74efbe542",
-        "3b73057ac963643b8eea",
-        "fff398c3746ef4fa036b",
-        "46ccfd9f237730be5fbd",
-        "45d05763874785e3fd46",
-        "efce79dada36af0db126",
-        "fadfb9e2275e757b4768",
-        "1e092e7abfb6f47e5643",
+        "f815031fcd4d971163d7",
+        "6cb9a1637ad5a88a1f4a",
+        "8fb34538070e3b25e6e7",
+        "c3c20980a42f97b442dc",
+        "e9b1aafa99cb7d3ede45",
+        "1546e4df85489f3c1a9d",
+        "dca80e92164f15f19b72",
+        "57ba27608295d2cf8302",
+        "dfe3ff5b54860bc8e786",
+        "0b47859160436561c4d6",
+        "fa7f080ff4f86883a24a",
         "3332720cb7ad563c9907",
         "71546fd943b42729f5f6",
-        "f93634aef198e16cb9ad",
-        "1efc10fa31561fb0aae9",
+        "71fa4504462950d6fc1f",
+        "def64a1a9544d568baa8",
+        "46ccfd9f237730be5fbd",
         "9f5707680cde4ee217b0",
-        "727c94181ff7304f6a48",
-        "ef9fe653c107fcc5ac5e",
-        "a12839f864c0331d1405",
-        "47d1354628c40f69ea94",
-        "f80763f65152958197b0",
-        "4133d157b59cbe535b07",
-        "fb2bd8f9f6a228bffb6c",
-        "cacb37d5b51b621f9cb2",
-        "42e74e8b6292427428e6",
-        "08a018a2a824c22f6980",
-        "a3e350609ec63207ddbc",
-        "bcde31f223a3219167da",
-        "d74c8486be826ab9f486",
-        "ce4a39b84233cf77240a",
-        "347f5a1ab9b9003e944c",
-        "0622c0e95a685f7bb655",
-        "275ac0c3c343ad7e6353",
-        "59d91d127ab06ed61590",
-        "2d3ddae433f0a506350a",
+        "d859d2afc222b632cfe4",
+        "83d5a9dd183b7a8e3172",
+        "0bdd950cdb87f469b671",
+        "fa1bfefbea44c6b4faa7",
         "066ecb9d3c8e9f5105ad",
-        "a923f5d23cb9fa97de15",
-        "550841eea21d1ebfe3c6",
-        "c4ac401ac6d9b83707c8",
+        "10c4abfcde3f76b92d21",
+        "320fb80f32daeaa249e9",
         "e6752f8534ca032d5ecb",
-        "1026782608d1ab5bd0ea",
-        "effb6b82bd4ad6842b02",
-        "e7ab8b76a3022f26d462",
+        "2631e38023cba3a4362e",
+        "cbd060b8c9d29664843a",
+        "f6d02ab2368f40415669",
         "a0a07aa64581aea886bf",
-        "a30f1d37a56c2d387648",
-        "47e15a623109c2c65d26",
-        "fc525a3f69371efe0d34",
-        "fa7c59024c04890af6cc",
-        "188875cb3c4378510496",
-        "c22d4e874b322a4a59cb",
-        "d86148d2e6e18d394967",
-        "ef7fae070a3f90d2bbb5",
-        "ee16063f9798a360a85b",
-        "58bb40c7f8f798e14a5d",
-        "2c86055ecaf9beffdb7e",
-        "22457b39acf650fa659c"
+        "8057d2629774dff787e9",
+        "3a7afdfc1f36e0d0e20f",
+        "3340f16589095deec9cb",
+        "88b4c112e3825dafddd4",
+        "6c8391bcafd445b738ad",
+        "f8678029d66a75a9626d",
+        "424277e92930712042e5",
+        "b06162a5ebe70f0327b1",
+        "bc685ce259efbf78ce09",
+        "9c68a93f816b0da83246",
+        "3c57f10ba85efaeb16f1",
+        "37dd38da87d8e05c296f"
       ],
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "source_name": "D4D Qatar Offers"
     }
   },
@@ -176,11 +163,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "e02658e589edd3ff3f3b45939d96dea851e4c949a04e25a54d78dfd2d9023afe",
       "manual_status": "auto",
       "manual_fields": [],
@@ -211,11 +198,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "65cf994d86f78d8d369d34f793725ce824379d2d010a7a04c415c08c2c1a31ab",
       "manual_status": "auto",
       "manual_fields": [],
@@ -246,11 +233,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "18f897f91b02e3276c88d136408fcd0594f803760552bbae357846eb4bfbf60c",
       "manual_status": "auto",
       "manual_fields": [],
@@ -281,11 +268,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "5690d6f7db8e09c03c306c92077fbc99b5456ae1444ef7ff09f58b3cb9dd3d0b",
       "manual_status": "auto",
       "manual_fields": [],
@@ -316,11 +303,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "6211f5e5decabf2fbd8eab57724b0a867faa566410e61d7e4ad06adbd3c438d4",
       "manual_status": "auto",
       "manual_fields": [],
@@ -351,11 +338,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "9f9bedfabe8da0f0b7280775b2c079c61ebf074675626c9581a9394c36b36c34",
       "manual_status": "auto",
       "manual_fields": [],
@@ -386,11 +373,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "d0d9b03168f7fbf9ede72594dc6a5fd83eed775f7dadb5b9900ae9e5fa0b20af",
       "manual_status": "auto",
       "manual_fields": [],
@@ -421,11 +408,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "291f2f33f0f381f29656475fc3ddfc67a6c101b0567284708ec15b5550146968",
       "manual_status": "auto",
       "manual_fields": [],
@@ -456,11 +443,11 @@
       "mall_name": "Mall of Qatar",
       "origin": "local_extractor",
       "verification_status": "verified",
-      "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verification_reason": "Evidence extracted from a currently reachable configured source page.",
+      "verified_at": "2026-10-15T00:19:32+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:32+03:00",
       "last_source_hash": "57af7291523ccbfaa83ec5aef2748c17d22db619b322ff80a8095c03c3350cf3",
       "manual_status": "auto",
       "manual_fields": [],
@@ -492,10 +479,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "e2d68e1e90eb88f13a75b38b5e2a6aa9591590ffd5068650343ab1d5f2b59f86",
       "manual_status": "auto",
       "manual_fields": [],
@@ -527,10 +514,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "1db58c625ff2d886cbe4974751cc6c099b3a274ff0396d859a11735b1e695073",
       "manual_status": "auto",
       "manual_fields": [],
@@ -562,10 +549,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "c91962111a44f2d5de14c08b3d36fb0f3558ab25d780bf84e74939e20158f460",
       "manual_status": "auto",
       "manual_fields": [],
@@ -597,10 +584,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "227f4208b61fa5c17d3092d308d5ac59de341bdd0062494701b2cd5924a8981b",
       "manual_status": "auto",
       "manual_fields": [],
@@ -634,8 +621,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "b3aae322499da6076cfc25b26eb5fd3fd341171e4a108694a79a19c67fc1e623",
       "manual_status": "auto",
       "manual_fields": [],
@@ -667,10 +654,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "11f399cbc398fac5d114dcf49992a2110c7c855749a683d51a253f3ad9585fe7",
       "manual_status": "auto",
       "manual_fields": [],
@@ -702,10 +689,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "09afce2ce5487783c5ea505acad875fc6f93dd8be6eeabec45c62c334e4188dd",
       "manual_status": "auto",
       "manual_fields": [],
@@ -737,10 +724,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "7876d4bc2c30fb563f4399ce187578b4282e03178fe2eb7bad23527316db9e21",
       "manual_status": "auto",
       "manual_fields": [],
@@ -772,10 +759,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "f31edfa0b45760d7c5364ddbf187116b6f23349e5043ae402f82c9a0fb69474d",
       "manual_status": "auto",
       "manual_fields": [],
@@ -807,10 +794,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "93e7a6c921f7a4dda5a46f7623f721fd3677f9ab820ae43c306bced001929148",
       "manual_status": "auto",
       "manual_fields": [],
@@ -842,10 +829,10 @@
       "origin": "local_extractor",
       "verification_status": "verified",
       "verification_reason": "Reconfirmed on the current source page.",
-      "verified_at": "2026-10-14T19:37:24+03:00",
+      "verified_at": "2026-10-15T00:19:31+03:00",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:24+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:31+03:00",
       "last_source_hash": "c74c7c6b189da55fc3b2a54813963532ccf88baaeb99860f1f3319c522be974b",
       "manual_status": "auto",
       "manual_fields": [],
@@ -885,7 +872,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "562b7100cb387d9d6da9": {
       "store_name": "Mall promotion",
@@ -911,7 +898,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -920,7 +907,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "d772501e1e754ca81dea": {
       "store_name": "Mall promotion",
@@ -955,7 +942,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "da1ebe747e8a76efc7f7": {
       "store_name": "Mall promotion",
@@ -990,7 +977,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "83597bc78c6741f8b118": {
       "store_name": "Mall promotion",
@@ -1025,7 +1012,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "9475cec8fe658ffaa094": {
       "store_name": "Mall promotion",
@@ -1051,7 +1038,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -1060,7 +1047,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "043a7d010876b38d52ef": {
       "store_name": "Mall promotion",
@@ -1095,7 +1082,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "166807173ceeb2f28a5e": {
       "store_name": "Mall promotion",
@@ -1130,7 +1117,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a12839f864c0331d1405": {
       "store_name": "Mall promotion",
@@ -1159,8 +1146,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "d2a1401a56c3c2c115a67de60d8ed2bebb7c26ed5733d6906fabff089f7f801d",
       "manual_status": "auto",
       "manual_fields": [],
@@ -1200,7 +1187,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "1b6d232b229ff9306e25": {
       "store_name": "Mall promotion",
@@ -1235,7 +1222,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "3332720cb7ad563c9907": {
       "store_name": "Mall promotion",
@@ -1264,8 +1251,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "c0ab38cbde828f1517f9c7406e5be2126a555e722b4d66c9a05fe9e32a1acf6b",
       "manual_status": "auto",
       "manual_fields": [],
@@ -1299,8 +1286,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "68e9218c8c40d91fd365c71bbe64d140f6c05756ed92eb857f2e2f9f8a5c2a7b",
       "manual_status": "auto",
       "manual_fields": [],
@@ -1340,7 +1327,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "ca00c8273494eabb8f65": {
       "store_name": "Mall promotion",
@@ -1375,7 +1362,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "71fa4504462950d6fc1f": {
       "store_name": "Mall promotion",
@@ -1401,16 +1388,16 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "last_checked_at": "2026-10-12T13:03:02+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "b8dda533f109e9bd5c5c121c9690807fe4a7d6c33317dcbdd732c889efc94b7b",
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 0
     },
     "89291c5c9c74560330a3": {
       "store_name": "Mall promotion",
@@ -1445,7 +1432,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "3c25fb5e791cbef147cc": {
       "store_name": "Mall promotion",
@@ -1474,8 +1461,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:35+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "a13e5a9da3bf39ced553c4544bb537294a2151f02c0ac7a90819602d3946fbef",
       "manual_status": "auto",
       "manual_fields": [],
@@ -1506,7 +1493,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -1515,7 +1502,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "9f5707680cde4ee217b0": {
       "store_name": "Al Meera",
@@ -1544,8 +1531,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "b30df52a654fd1da7b409d548c963fa88f964a311af9f29c71f53562479532ff",
       "manual_status": "auto",
       "manual_fields": [],
@@ -1585,7 +1572,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "e5f2532c9885c144c719": {
       "store_name": "Mall promotion",
@@ -1620,7 +1607,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "b0c2e6aca48dbc72c3cc": {
       "store_name": "Mall promotion",
@@ -1655,7 +1642,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "8df5b94ec3c5365e2a74": {
       "store_name": "Mall promotion",
@@ -1690,7 +1677,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "e2b833b4cd0c50b96434": {
       "store_name": "Mall promotion",
@@ -1725,7 +1712,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "4133d157b59cbe535b07": {
       "store_name": "Mall promotion",
@@ -1751,7 +1738,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -1760,7 +1747,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "3e8a2aaf0799fc0a9525": {
       "store_name": "Mall promotion",
@@ -1789,8 +1776,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:35+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "be9fc552169576af33cf4fed4c30cf425f91ed2bac206f0f3cd877ec2a4eb5b8",
       "manual_status": "auto",
       "manual_fields": [],
@@ -1830,7 +1817,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "08a018a2a824c22f6980": {
       "store_name": "Mall promotion",
@@ -1856,7 +1843,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -1865,7 +1852,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "5d46cac5f1109be97872": {
       "store_name": "Mall promotion",
@@ -1900,7 +1887,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "bcde31f223a3219167da": {
       "store_name": "Mall promotion",
@@ -1926,7 +1913,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -1935,7 +1922,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "3152bce5003804b4a9fa": {
       "store_name": "Mall promotion",
@@ -1970,7 +1957,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "cacb37d5b51b621f9cb2": {
       "store_name": "Mall promotion",
@@ -1996,7 +1983,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -2005,7 +1992,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "ed0d12ac20286d21c568": {
       "store_name": "Mall promotion",
@@ -2031,7 +2018,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -2040,7 +2027,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "0dfaec4c09401607e4e1": {
       "store_name": "Mall promotion",
@@ -2075,7 +2062,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "347f5a1ab9b9003e944c": {
       "store_name": "Mall promotion",
@@ -2101,7 +2088,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -2110,7 +2097,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "0622c0e95a685f7bb655": {
       "store_name": "Mall promotion",
@@ -2139,8 +2126,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "ee0d8f4a15b36eb5fb4991a6389d61131ae814939e7b92eefd3802dc5d009dca",
       "manual_status": "auto",
       "manual_fields": [],
@@ -2171,7 +2158,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -2180,7 +2167,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "59d91d127ab06ed61590": {
       "store_name": "Mall promotion",
@@ -2206,7 +2193,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -2215,7 +2202,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "fa1bfefbea44c6b4faa7": {
       "store_name": "Mall promotion",
@@ -2241,16 +2228,16 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "last_checked_at": "2026-10-12T23:57:06+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "6f8b0b98d96c82812dca2d059d34265bbc4d84d2736bb0b0043d7af0729b1038",
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 0
     },
     "066ecb9d3c8e9f5105ad": {
       "store_name": "Mall promotion",
@@ -2279,8 +2266,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "3da894ba1bba8e4ea7f85da2ecc508007f5ea34e63f8c92ecec24678a059a03e",
       "manual_status": "auto",
       "manual_fields": [],
@@ -2320,7 +2307,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "711988faba0b6d711cdb": {
       "store_name": "Carrefour",
@@ -2355,7 +2342,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "1e371e5fc99057146551": {
       "store_name": "Carrefour",
@@ -2390,7 +2377,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "859fdd480fc865d0c129": {
       "store_name": "Mall promotion",
@@ -2425,7 +2412,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "4737e31b731780c981ac": {
       "store_name": "Carrefour",
@@ -2460,7 +2447,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "3fe64d5665f19b7f1452": {
       "store_name": "Mall promotion",
@@ -2495,7 +2482,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "e6752f8534ca032d5ecb": {
       "store_name": "Lulu Hypermarket",
@@ -2524,8 +2511,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "467bc1efdc11d75c5eb3d417a4c851dac046b6b8f61e57effbc837da2eb4bfa8",
       "manual_status": "auto",
       "manual_fields": [],
@@ -2565,7 +2552,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "7fd2b9dc8567ee34aa7f": {
       "store_name": "Mall promotion",
@@ -2600,7 +2587,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "e24c86ed1949b837f1b3": {
       "store_name": "Mall promotion",
@@ -2635,7 +2622,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "a0a07aa64581aea886bf": {
       "store_name": "Mall promotion",
@@ -2664,8 +2651,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "f3fa8f3ebbf40ab82a01bac235decc630d8cc3779b71540c8744a16ad911fe98",
       "manual_status": "auto",
       "manual_fields": [],
@@ -2705,7 +2692,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "1616368bacbaa9cfea23": {
       "store_name": "Mall promotion",
@@ -2740,7 +2727,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "16e01bfa893f26a1729f": {
       "store_name": "Mall promotion",
@@ -2775,7 +2762,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "e7f3ee5a2dbc9ce70d82": {
       "store_name": "Mall promotion",
@@ -2810,7 +2797,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "add2ff848d65b49c6a2b": {
       "store_name": "Mall promotion",
@@ -2845,7 +2832,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "13ec91f39bc188de4499": {
       "store_name": "Mall promotion",
@@ -2880,7 +2867,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "dbde64bd1b7e6cc20c99": {
       "store_name": "Mall promotion",
@@ -2915,7 +2902,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "829a7db8c1bdee30e3ee": {
       "store_name": "Mall promotion",
@@ -2950,7 +2937,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "fc525a3f69371efe0d34": {
       "store_name": "Mall promotion",
@@ -2976,7 +2963,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-14",
@@ -2985,7 +2972,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "1b745a38df7f01286d0c": {
       "store_name": "Mall promotion",
@@ -3020,7 +3007,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "cddda70dc8a5a4d166ca": {
       "store_name": "Mall promotion",
@@ -3055,7 +3042,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "18d0ed81af219e8f412a": {
       "store_name": "Mall promotion",
@@ -3090,7 +3077,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "347d9f6382393e102aef": {
       "store_name": "Mall promotion",
@@ -3125,7 +3112,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "de3fa17c97389d565a89": {
       "store_name": "Mall promotion",
@@ -3160,7 +3147,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "13919200bd69dee1d688": {
       "store_name": "Mall promotion",
@@ -3195,7 +3182,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "8b326cc14bd7beafa3bf": {
       "store_name": "Mall promotion",
@@ -3230,7 +3217,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "9d6cb0cc4b12d87f1f8e": {
       "store_name": "Mall promotion",
@@ -3265,7 +3252,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "e910a36f165cf5835325": {
       "store_name": "Carrefour",
@@ -3300,7 +3287,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "4f89d93ceff3bcaf7268": {
       "store_name": "Mall promotion",
@@ -3335,7 +3322,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "4f2395892daacfa82217": {
       "store_name": "Carrefour",
@@ -3370,7 +3357,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "b45e770efef2a4b93eb0": {
       "store_name": "Mall promotion",
@@ -3405,7 +3392,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "6e548b3e08747914583a": {
       "store_name": "Mall promotion",
@@ -3440,7 +3427,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "26c6c0df3672f5f8818f": {
       "store_name": "Mall promotion",
@@ -3475,7 +3462,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "54c4ccb8108a4d22abf2": {
       "store_name": "Mall promotion",
@@ -3510,7 +3497,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 2
+      "days_since_seen": 3
     },
     "1d7f3a75f2c7c4530871": {
       "store_name": "Mall promotion",
@@ -3545,7 +3532,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "4461d303c483a2843afe": {
       "store_name": "Mall promotion",
@@ -3580,7 +3567,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "4aca0021a912190502c9": {
       "store_name": "Mall promotion",
@@ -3615,7 +3602,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "7146e9bb0efdf7cfb829": {
       "store_name": "Mall promotion",
@@ -3650,7 +3637,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "7ef9a696e1b2e4ceb336": {
       "store_name": "Mall promotion",
@@ -3685,7 +3672,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "46ccfd9f237730be5fbd": {
       "store_name": "Mall promotion",
@@ -3714,8 +3701,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "a40edb4b4e203e077228aba70750358f3553555c1390c4637b4b5a2709b8d3ed",
       "manual_status": "auto",
       "manual_fields": [],
@@ -3755,7 +3742,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a13cfafcf5d28b8f16fc": {
       "store_name": "Mall promotion",
@@ -3790,7 +3777,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a745184500e89ceb5b9f": {
       "store_name": "Mall promotion",
@@ -3825,7 +3812,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "17b48a0e5067e199bd28": {
       "store_name": "Mall promotion",
@@ -3860,7 +3847,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "cb24214ebfd8d44a24f7": {
       "store_name": "Mall promotion",
@@ -3895,7 +3882,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "33c9caa199b6e0a76a6e": {
       "store_name": "Mall promotion",
@@ -3930,7 +3917,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "32d28cb3e0bc3844bfe7": {
       "store_name": "Mall promotion",
@@ -3965,7 +3952,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "0805d5dcf96f50ff96ff": {
       "store_name": "Mall promotion",
@@ -4000,7 +3987,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "dfe75217893ff11c5db6": {
       "store_name": "Mall promotion",
@@ -4035,7 +4022,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "d0297d8fa77647f45a3d": {
       "store_name": "Mall promotion",
@@ -4070,7 +4057,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "f548ddcbb46b3d4279e9": {
       "store_name": "Mall promotion",
@@ -4105,7 +4092,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "3c11bd0b6ff95c8603c2": {
       "store_name": "Mall promotion",
@@ -4140,7 +4127,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "0c7648c16dafdc2c3913": {
       "store_name": "Mall promotion",
@@ -4175,7 +4162,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a3e350609ec63207ddbc": {
       "store_name": "Mall promotion",
@@ -4204,8 +4191,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "629b12d81df807389f7568a33ff11a398524b26a9c625ca9254a139dc2082712",
       "manual_status": "auto",
       "manual_fields": [],
@@ -4245,7 +4232,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "90c88b885a40c2b946d8": {
       "store_name": "Mall promotion",
@@ -4280,7 +4267,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "4079db0c142afe8865ae": {
       "store_name": "Carrefour",
@@ -4315,7 +4302,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "472e57c509eeb2943042": {
       "store_name": "Mall promotion",
@@ -4350,7 +4337,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "b45d7a30031bf403cba8": {
       "store_name": "Carrefour",
@@ -4385,7 +4372,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "8545e7a82c948b53ae19": {
       "store_name": "Mall promotion",
@@ -4420,7 +4407,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "f42b894091f57e103e3b": {
       "store_name": "Mall promotion",
@@ -4455,7 +4442,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "b449fb4f101062c3a476": {
       "store_name": "Mall promotion",
@@ -4490,7 +4477,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "82d602d614b540793338": {
       "store_name": "Mall promotion",
@@ -4525,7 +4512,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "ba485d875f80cf05d780": {
       "store_name": "Mall promotion",
@@ -4560,7 +4547,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "c0e714b23409ee957039": {
       "store_name": "Mall promotion",
@@ -4595,7 +4582,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "cb2c1bb112a6c7d5aada": {
       "store_name": "Mall promotion",
@@ -4630,7 +4617,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a1bbec7f30005db579d1": {
       "store_name": "Mall promotion",
@@ -4665,7 +4652,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "6145ec1acbd0055d30ce": {
       "store_name": "Mall promotion",
@@ -4700,7 +4687,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "c735e7a070976e14fa66": {
       "store_name": "Mall promotion",
@@ -4735,7 +4722,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a0e28c39aa20daa99b38": {
       "store_name": "Mall promotion",
@@ -4770,7 +4757,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "3340f16589095deec9cb": {
       "store_name": "Mall promotion",
@@ -4796,16 +4783,16 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-13",
-      "last_seen": "2026-10-13",
-      "last_checked_at": "2026-10-13T16:38:48+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "87407a370845bd52a157cf19dc7854baa92ebd45837d643b276e675a0162ebad",
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 0
     },
     "82cb92b959e7ed75ca77": {
       "store_name": "Mall promotion",
@@ -4840,7 +4827,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "2c21d53681b913b114c1": {
       "store_name": "Mall promotion",
@@ -4875,7 +4862,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "df6ac66c43a2bbc4a776": {
       "store_name": "Mall promotion",
@@ -4910,7 +4897,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "5b7b49a8728b13f82f83": {
       "store_name": "Mall promotion",
@@ -4945,7 +4932,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "f6add79f0c8e75d7bc25": {
       "store_name": "Mall promotion",
@@ -4980,7 +4967,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "3c1e9a7552e9847ff34e": {
       "store_name": "Mall promotion",
@@ -5015,7 +5002,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "97c8df0669b481ef7cae": {
       "store_name": "Mall promotion",
@@ -5050,7 +5037,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "35ad7c2fac89de150ebc": {
       "store_name": "Mall promotion",
@@ -5085,7 +5072,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "0fa1dc8cbcdf346e300b": {
       "store_name": "Carrefour",
@@ -5120,7 +5107,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "33dcc334bcfe4e0462e2": {
       "store_name": "Mall promotion",
@@ -5155,7 +5142,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "4723520e7f1a5869c0bd": {
       "store_name": "Carrefour",
@@ -5190,7 +5177,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "1873f2e851cd3b1db296": {
       "store_name": "Mall promotion",
@@ -5225,7 +5212,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 1
+      "days_since_seen": 2
     },
     "a78b23caba91a5824f7e": {
       "store_name": "Mall promotion",
@@ -5251,11 +5238,11 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T06:41:46+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "c5086629ff48d7215627a63351bda696e41f33769e5f4ea76400feb17707b14f",
       "manual_status": "auto",
       "manual_fields": [],
@@ -5289,8 +5276,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:35+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "da03feb47d9344c0c9a43f47a269500136bbb907795272d5481066e6b611029e",
       "manual_status": "auto",
       "manual_fields": [],
@@ -5321,7 +5308,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5330,7 +5317,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "b9fe86185346f4358693": {
       "store_name": "Mall promotion",
@@ -5365,7 +5352,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "2a84b392936163c74374": {
       "store_name": "Mall promotion",
@@ -5391,7 +5378,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5400,7 +5387,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "69e02d9d88038b9343ed": {
       "store_name": "Mall promotion",
@@ -5426,7 +5413,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5435,7 +5422,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "c6a719030660627b09ec": {
       "store_name": "Mall promotion",
@@ -5464,8 +5451,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:35+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "51d071d117b8f658cec01fa148e8f52e2a6f95611a038104f396625425c84037",
       "manual_status": "auto",
       "manual_fields": [],
@@ -5496,7 +5483,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5505,7 +5492,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "58ea471a078363ce6f23": {
       "store_name": "Mall promotion",
@@ -5540,7 +5527,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "fadfb9e2275e757b4768": {
       "store_name": "Mall promotion",
@@ -5566,7 +5553,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5575,7 +5562,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "d1be70c0518a91997ac4": {
       "store_name": "Mall promotion",
@@ -5610,7 +5597,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "f93634aef198e16cb9ad": {
       "store_name": "Mall promotion",
@@ -5639,8 +5626,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "844fff6e37a364acea79d0f4a38fda148b47c06dd17a601e139948b530a6b34b",
       "manual_status": "auto",
       "manual_fields": [],
@@ -5671,7 +5658,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5680,7 +5667,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "727c94181ff7304f6a48": {
       "store_name": "Mall promotion",
@@ -5706,7 +5693,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5715,7 +5702,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "ef9fe653c107fcc5ac5e": {
       "store_name": "Mall promotion",
@@ -5741,7 +5728,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5750,7 +5737,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "47d1354628c40f69ea94": {
       "store_name": "Mall promotion",
@@ -5776,7 +5763,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5785,7 +5772,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "f80763f65152958197b0": {
       "store_name": "Mall promotion",
@@ -5811,7 +5798,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5820,7 +5807,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "fb2bd8f9f6a228bffb6c": {
       "store_name": "Mall promotion",
@@ -5846,7 +5833,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5855,7 +5842,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "42e74e8b6292427428e6": {
       "store_name": "Mall promotion",
@@ -5881,7 +5868,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5890,7 +5877,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "d74c8486be826ab9f486": {
       "store_name": "Mall promotion",
@@ -5916,7 +5903,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5925,7 +5912,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "ce4a39b84233cf77240a": {
       "store_name": "Mall promotion",
@@ -5951,7 +5938,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5960,7 +5947,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "2d3ddae433f0a506350a": {
       "store_name": "Mall promotion",
@@ -5986,7 +5973,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -5995,7 +5982,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "a923f5d23cb9fa97de15": {
       "store_name": "Mall promotion",
@@ -6021,7 +6008,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6030,7 +6017,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "550841eea21d1ebfe3c6": {
       "store_name": "Carrefour",
@@ -6056,7 +6043,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6065,7 +6052,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "c4ac401ac6d9b83707c8": {
       "store_name": "Mall promotion",
@@ -6091,7 +6078,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6100,7 +6087,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "1026782608d1ab5bd0ea": {
       "store_name": "Samsung",
@@ -6126,7 +6113,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6135,7 +6122,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "effb6b82bd4ad6842b02": {
       "store_name": "Mall promotion",
@@ -6161,7 +6148,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6170,7 +6157,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "e7ab8b76a3022f26d462": {
       "store_name": "Mall promotion",
@@ -6196,7 +6183,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6205,7 +6192,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "a30f1d37a56c2d387648": {
       "store_name": "Mall promotion",
@@ -6231,7 +6218,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6240,7 +6227,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "47e15a623109c2c65d26": {
       "store_name": "Mall promotion",
@@ -6266,7 +6253,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6275,7 +6262,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "fa7c59024c04890af6cc": {
       "store_name": "Mall promotion",
@@ -6301,7 +6288,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6310,7 +6297,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "188875cb3c4378510496": {
       "store_name": "Mall promotion",
@@ -6336,7 +6323,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6345,7 +6332,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "c22d4e874b322a4a59cb": {
       "store_name": "Mall promotion",
@@ -6371,7 +6358,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6380,7 +6367,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "d86148d2e6e18d394967": {
       "store_name": "Mall promotion",
@@ -6406,7 +6393,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6415,7 +6402,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "ef7fae070a3f90d2bbb5": {
       "store_name": "Mall promotion",
@@ -6441,7 +6428,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6450,7 +6437,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "ee16063f9798a360a85b": {
       "store_name": "Mall promotion",
@@ -6476,7 +6463,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6485,7 +6472,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "58bb40c7f8f798e14a5d": {
       "store_name": "Carrefour",
@@ -6511,7 +6498,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6520,7 +6507,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "2c86055ecaf9beffdb7e": {
       "store_name": "Mall promotion",
@@ -6546,7 +6533,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6555,7 +6542,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "22457b39acf650fa659c": {
       "store_name": "Carrefour",
@@ -6581,7 +6568,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6590,7 +6577,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "e0cea728d61720a3da15": {
       "store_name": "Mall promotion",
@@ -6616,7 +6603,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6625,7 +6612,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "7cdc5858ec3b32ad0212": {
       "store_name": "Carrefour",
@@ -6654,8 +6641,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:35+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "54278e062e82a586f49aeb3d237946b677e32131850036a2f4ec870dd982d79f",
       "manual_status": "auto",
       "manual_fields": [],
@@ -6686,7 +6673,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6695,7 +6682,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "826ea652b10f3352a5de": {
       "store_name": "Mall promotion",
@@ -6724,8 +6711,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:35+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "3b3e22575db515feead3093135aa61982a69f12d396c6034d64ddde5d0d2cf51",
       "manual_status": "auto",
       "manual_fields": [],
@@ -6765,7 +6752,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "84bfa7886cb2d3f81cc2": {
       "store_name": "Carrefour",
@@ -6794,8 +6781,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "7c76ef891581b03d00c3bdd9bbfba6f233007368f05703bd8464f9558c262180",
       "manual_status": "auto",
       "manual_fields": [],
@@ -6826,7 +6813,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6835,7 +6822,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "8a5122465ff09079a860": {
       "store_name": "Carrefour",
@@ -6861,7 +6848,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6870,7 +6857,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "6f4336becba5f52da5d0": {
       "store_name": "Carrefour",
@@ -6899,8 +6886,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
       "last_source_hash": "d70c70cca2f12a8bd91d327c7d90bc431d1722291f82ca1f0cbb0d75a93a3474",
       "manual_status": "auto",
       "manual_fields": [],
@@ -6931,7 +6918,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6940,7 +6927,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "c7498e0cd536dc059ece": {
       "store_name": "Carrefour",
@@ -6966,7 +6953,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -6975,7 +6962,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "028250f60831afe078e9": {
       "store_name": "Lulu",
@@ -7001,7 +6988,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7010,7 +6997,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "6b8dff1711b74efbe542": {
       "store_name": "Lulu Hypermarket",
@@ -7036,7 +7023,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7045,7 +7032,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "3b73057ac963643b8eea": {
       "store_name": "Mall promotion",
@@ -7071,7 +7058,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7080,7 +7067,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "fff398c3746ef4fa036b": {
       "store_name": "Carrefour",
@@ -7106,7 +7093,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7115,7 +7102,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "45d05763874785e3fd46": {
       "store_name": "Carrefour",
@@ -7141,7 +7128,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7150,7 +7137,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "efce79dada36af0db126": {
       "store_name": "Mall promotion",
@@ -7176,7 +7163,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7185,7 +7172,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "4636b6934223fedf784b": {
       "store_name": "Mall promotion",
@@ -7211,7 +7198,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7220,7 +7207,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "1ab758a062dc5340bca7": {
       "store_name": "Mall promotion",
@@ -7246,7 +7233,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7255,7 +7242,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "3af2cd6f1b6a027eeb7d": {
       "store_name": "Mall promotion",
@@ -7281,7 +7268,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7290,7 +7277,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "79b90beae520736820cb": {
       "store_name": "Mall promotion",
@@ -7316,7 +7303,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7325,7 +7312,7 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
-      "days_since_seen": 0
+      "days_since_seen": 1
     },
     "c05fc045cddabb4c8ca9": {
       "store_name": "Mall promotion",
@@ -7354,8 +7341,8 @@
       "verification_reason": "Discovered candidate requires source verification or manual review.",
       "verified_at": null,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "last_checked_at": "2026-10-14T19:37:36+03:00",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
       "last_source_hash": "7d14b44e94125046035ebfb1b596fe8e8cc6869e4062c179b38e89242531c1ce",
       "manual_status": "auto",
       "manual_fields": [],
@@ -7386,7 +7373,7 @@
       "mall_name": "Web discovery",
       "origin": "local_extractor",
       "verification_status": "pending",
-      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verification_reason": "Offer was not found after its source changed or became unavailable; manual re-check required.",
       "verified_at": null,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
@@ -7395,16 +7382,1556 @@
       "manual_status": "auto",
       "manual_fields": [],
       "is_active": false,
+      "days_since_seen": 1
+    },
+    "7133e50bc586740ac2d5": {
+      "store_name": "Mall promotion",
+      "title": "+2 Days left Mid Month Sale View Details Shop Online",
+      "title_ar": null,
+      "description": "+2 Days left Mid Month Sale View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+2 Days left Mid Month Sale View Details Shop Online",
+      "confidence": 0.45,
+      "id": "7133e50bc586740ac2d5",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "4c81a6cb573497457f9eeab17080e1a4f07ed79f650e0e2bb074191425a06e98",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "d172ce118a496a7ac2b3": {
+      "store_name": "Mall promotion",
+      "title": "Shop Online Grand Hypermarket Mid Month Sale +7 Pages",
+      "title_ar": null,
+      "description": "Shop Online Grand Hypermarket Mid Month Sale +7 Pages Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Grand Hypermarket Mid Month Sale +7 Pages",
+      "confidence": 0.45,
+      "id": "d172ce118a496a7ac2b3",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "1934119d7389bd441df1e5e089e8c495d3f9d00221ba0312f75ab214379ddbd1",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "b1c6baaecd51a1986920": {
+      "store_name": "Mall promotion",
+      "title": "+5 Days left Special Offer View Details Shop Online",
+      "title_ar": null,
+      "description": "+5 Days left Special Offer View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+5 Days left Special Offer View Details Shop Online",
+      "confidence": 0.45,
+      "id": "b1c6baaecd51a1986920",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "8beffc22cc16e6420978468ac6dfe2b7b2ad97621490daca3a6459f5ed9d5788",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "13c7773083c71f896fab": {
+      "store_name": "Mall promotion",
+      "title": "Order via WhatsApp Cairo Phones Special Offer Ends today Mobi Fest",
+      "title_ar": null,
+      "description": "Order via WhatsApp Cairo Phones Special Offer Ends today Mobi Fest Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "electronics",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Order via WhatsApp Cairo Phones Special Offer Ends today Mobi Fest",
+      "confidence": 0.45,
+      "id": "13c7773083c71f896fab",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "386402ce51566c363141a298fdc44bd057260ff33117b9487901c6a77645b28b",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "aee8e09e52349ac4e8ff": {
+      "store_name": "Mall promotion",
+      "title": "+6 Days left Buy More Save More View Details Dana Market",
+      "title_ar": null,
+      "description": "+6 Days left Buy More Save More View Details Dana Market Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+6 Days left Buy More Save More View Details Dana Market",
+      "confidence": 0.45,
+      "id": "aee8e09e52349ac4e8ff",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "88e835afef6fe76bf91af09323a5d0fd7fef6c16839db62e1ef1ed00aff06593",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "3741228fbc6323bfa020": {
+      "store_name": "Mall promotion",
+      "title": "+2 Days left Buy More Save More View Details Doha Stop n Shop Hypermarket",
+      "title_ar": null,
+      "description": "+2 Days left Buy More Save More View Details Doha Stop n Shop Hypermarket Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+2 Days left Buy More Save More View Details Doha Stop n Shop Hypermarket",
+      "confidence": 0.45,
+      "id": "3741228fbc6323bfa020",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "f849313f3cdd64c3119b05fb1a976fa143fecabb0538a3618617f0da4fbfd51b",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "dcc2923d78121557a867": {
+      "store_name": "Mall promotion",
+      "title": "View Details Doha Stop n Shop Hypermarket Buy More Save More +3 Days left",
+      "title_ar": null,
+      "description": "View Details Doha Stop n Shop Hypermarket Buy More Save More +3 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "View Details Doha Stop n Shop Hypermarket Buy More Save More +3 Days left",
+      "confidence": 0.45,
+      "id": "dcc2923d78121557a867",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "8e97c0887dae750b7da53dd1536dd01418fac821cd359138452dd6205f8c9b09",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "ad21982bf20d543a622e": {
+      "store_name": "Mall promotion",
+      "title": "+9 Days left Free Delivery In 60 Minutes-Online Exclusive View Details Shop Online",
+      "title_ar": null,
+      "description": "+9 Days left Free Delivery In 60 Minutes-Online Exclusive View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+9 Days left Free Delivery In 60 Minutes-Online Exclusive View Details Shop Online",
+      "confidence": 0.45,
+      "id": "ad21982bf20d543a622e",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "650074b432056c8199004528be7db7126b36e599591e13e516b36b6ea2fd7847",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "aa7f8041f0af4f93ce5c": {
+      "store_name": "Mall promotion",
+      "title": "Order via WhatsApp Al Raihan Mobile Special Offer +4 Pages",
+      "title_ar": null,
+      "description": "Order via WhatsApp Al Raihan Mobile Special Offer +4 Pages Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Order via WhatsApp Al Raihan Mobile Special Offer +4 Pages",
+      "confidence": 0.45,
+      "id": "aa7f8041f0af4f93ce5c",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:41+03:00",
+      "last_source_hash": "c9db687f9c15c10d615fe2187fd337799c2e0a977637e8d971745c310589ec0d",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "72e5996da6655fb7338c": {
+      "store_name": "Mall promotion",
+      "title": "+7 Days left Don't Miss Out! Big Sale View Details Shop Online",
+      "title_ar": null,
+      "description": "+7 Days left Don't Miss Out! Big Sale View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+7 Days left Don't Miss Out! Big Sale View Details Shop Online",
+      "confidence": 0.45,
+      "id": "72e5996da6655fb7338c",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "861b7963af0c04ce7d3a2658068a469d00cd1793496d8c753eb33074fe115650",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "1ffb7c85164b28ca821a": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour Don't Miss Out! Big Sale +5 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour Don't Miss Out! Big Sale +5 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour Don't Miss Out! Big Sale +5 Days left",
+      "confidence": 0.45,
+      "id": "1ffb7c85164b28ca821a",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "9d0080da13a3162f3398e699d4ea6d4d2ef0130ed5f13674e49e2bd0bf650673",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "fac5d88d7d4715f940ae": {
+      "store_name": "Lulu Hypermarket",
+      "title": "Shop Online LuLu Hypermarket Special Offers Ends today Special Offer",
+      "title_ar": null,
+      "description": "Shop Online LuLu Hypermarket Special Offers Ends today Special Offer Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online LuLu Hypermarket Special Offers Ends today Special Offer",
+      "confidence": 0.45,
+      "id": "fac5d88d7d4715f940ae",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "fe05c8a2a8da71d51ef376e6459fb2ff635232c98b3331fa05157f8ea8398d6b",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "b4430f101d479f4b9deb": {
+      "store_name": "Mall promotion",
+      "title": "Special Offers Ends today Special Offer View Details Order via WhatsApp",
+      "title_ar": null,
+      "description": "Special Offers Ends today Special Offer View Details Order via WhatsApp Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Special Offers Ends today Special Offer View Details Order via WhatsApp",
+      "confidence": 0.45,
+      "id": "b4430f101d479f4b9deb",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "22c83df63ba7d90308b538ee2e6c089b4ee27bddaa2d67336b1ff9f2f2f678ef",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "f815031fcd4d971163d7": {
+      "store_name": "Mall promotion",
+      "title": "VIVO V80 Lite Ends tomorrow Admiria 20% Off View Details Shop Online",
+      "title_ar": null,
+      "description": "VIVO V80 Lite Ends tomorrow Admiria 20% Off View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": "20% Off",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "VIVO V80 Lite Ends tomorrow Admiria 20% Off View Details Shop Online",
+      "confidence": 0.65,
+      "id": "f815031fcd4d971163d7",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "db99d461dda6b246ed14e466ed1adf1d196e5c46a975fa6bc7333f7e68316a4f",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "6cb9a1637ad5a88a1f4a": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour Admiria 20% Off +16 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour Admiria 20% Off +16 Days left Source: D4D Qatar Offers",
+      "discount_text": "20% Off",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour Admiria 20% Off +16 Days left",
+      "confidence": 0.65,
+      "id": "6cb9a1637ad5a88a1f4a",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "222ea67567f2f0c0e1af58d8188eeddbde0910c820fcf8f761e2052590314419",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "8fb34538070e3b25e6e7": {
+      "store_name": "Lulu",
+      "title": "+5 Days left Lulu 2026 Free Trolleys View Details Shop Online",
+      "title_ar": null,
+      "description": "+5 Days left Lulu 2026 Free Trolleys View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+5 Days left Lulu 2026 Free Trolleys View Details Shop Online",
+      "confidence": 0.45,
+      "id": "8fb34538070e3b25e6e7",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "d73c371e664576bfc35c60fe5a8bfbb1a50fa8e1f222c84bafad246764fbf5a4",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "c3c20980a42f97b442dc": {
+      "store_name": "Lulu Hypermarket",
+      "title": "Shop Online LuLu Hypermarket Lulu 2026 Free Trolleys +13 Days left",
+      "title_ar": null,
+      "description": "Shop Online LuLu Hypermarket Lulu 2026 Free Trolleys +13 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online LuLu Hypermarket Lulu 2026 Free Trolleys +13 Days left",
+      "confidence": 0.45,
+      "id": "c3c20980a42f97b442dc",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "3594460df80986076cc96eba595d3e4a7dfb2984dbb57e14485e474986cfbe08",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "e9b1aafa99cb7d3ede45": {
+      "store_name": "Mall promotion",
+      "title": "+2 Days left Haggies Free Feel View Details Shop Online",
+      "title_ar": null,
+      "description": "+2 Days left Haggies Free Feel View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+2 Days left Haggies Free Feel View Details Shop Online",
+      "confidence": 0.45,
+      "id": "e9b1aafa99cb7d3ede45",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "aa0b4187dfdc3900180beebd38d266def73d2a74e56d4895aef81aafbce2b335",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "1546e4df85489f3c1a9d": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour Haggies Free Feel +5 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour Haggies Free Feel +5 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour Haggies Free Feel +5 Days left",
+      "confidence": 0.45,
+      "id": "1546e4df85489f3c1a9d",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "7271bf0e9f65d3416b1d339adbe7465dc5adb90ebccc60c091caff866e1c9550",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "dca80e92164f15f19b72": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour Special Offer +5 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour Special Offer +5 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour Special Offer +5 Days left",
+      "confidence": 0.45,
+      "id": "dca80e92164f15f19b72",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "36a62c24259073ef2f2193368ae2b2fc1625e6667db4a9a804a8f66c0433c10f",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "57ba27608295d2cf8302": {
+      "store_name": "Mall promotion",
+      "title": "+5 Days left Special Offer View Details Intertec Group WLL",
+      "title_ar": null,
+      "description": "+5 Days left Special Offer View Details Intertec Group WLL Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+5 Days left Special Offer View Details Intertec Group WLL",
+      "confidence": 0.45,
+      "id": "57ba27608295d2cf8302",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "bf47e41b3ddc61f753d49f41b7168426cde7e2099e86bc8cf609284589caca72",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "dfe3ff5b54860bc8e786": {
+      "store_name": "Mall promotion",
+      "title": "View Details Intertec Group WLL Special Offer +16 Days left",
+      "title_ar": null,
+      "description": "View Details Intertec Group WLL Special Offer +16 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "View Details Intertec Group WLL Special Offer +16 Days left",
+      "confidence": 0.45,
+      "id": "dfe3ff5b54860bc8e786",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "c698410624755303abfbb2f801944a6c0ee1a7aba6de155b81d129780b192a0d",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "0b47859160436561c4d6": {
+      "store_name": "Mall promotion",
+      "title": "+16 Days left Special Offer View Details Shop Online",
+      "title_ar": null,
+      "description": "+16 Days left Special Offer View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+16 Days left Special Offer View Details Shop Online",
+      "confidence": 0.45,
+      "id": "0b47859160436561c4d6",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "fb4c0d7d4209b981e4b18dcd46296ddb792f0b31399ec433d486481daa313502",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "fa7f080ff4f86883a24a": {
+      "store_name": "Mall promotion",
+      "title": "+5 Days left Laptop Sale View Details Order via WhatsApp",
+      "title_ar": null,
+      "description": "+5 Days left Laptop Sale View Details Order via WhatsApp Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "electronics",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+5 Days left Laptop Sale View Details Order via WhatsApp",
+      "confidence": 0.45,
+      "id": "fa7f080ff4f86883a24a",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "734e953c13b178172ee2f5f088fc81ae05f64be581802a5947f860869eac1099",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "def64a1a9544d568baa8": {
+      "store_name": "Mall promotion",
+      "title": "Order via WhatsApp Royce World Trading & Services W.L.L Special Offer +5 Days left",
+      "title_ar": null,
+      "description": "Order via WhatsApp Royce World Trading & Services W.L.L Special Offer +5 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Order via WhatsApp Royce World Trading & Services W.L.L Special Offer +5 Days left",
+      "confidence": 0.45,
+      "id": "def64a1a9544d568baa8",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "53b23637186c4619bef5dfd673505a35e0d8bd43ca1a790791d70e6bdd6b5c09",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "d859d2afc222b632cfe4": {
+      "store_name": "Mall promotion",
+      "title": "+89 Days left Buy 1 Abaya Get 1 Bag Free View Details WhatsApp Order",
+      "title_ar": null,
+      "description": "+89 Days left Buy 1 Abaya Get 1 Bag Free View Details WhatsApp Order Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+89 Days left Buy 1 Abaya Get 1 Bag Free View Details WhatsApp Order",
+      "confidence": 0.45,
+      "id": "d859d2afc222b632cfe4",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "320e24d0ec22ee13f7c74fd09b76b455f3c5f061d19509998dbaeb9e7988f4bb",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "83d5a9dd183b7a8e3172": {
+      "store_name": "Mall promotion",
+      "title": "WhatsApp Order Marza Hypermarket Buy 1 Abaya Get 1 Bag Free +13 Days left",
+      "title_ar": null,
+      "description": "WhatsApp Order Marza Hypermarket Buy 1 Abaya Get 1 Bag Free +13 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "WhatsApp Order Marza Hypermarket Buy 1 Abaya Get 1 Bag Free +13 Days left",
+      "confidence": 0.45,
+      "id": "83d5a9dd183b7a8e3172",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "172a6682f02b5579295b2b6355e696c8a95d866bb3766005f75739aa1d8d67f6",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "0bdd950cdb87f469b671": {
+      "store_name": "Mall promotion",
+      "title": "Shop Online Techno Blue Special Offer +5 Days left",
+      "title_ar": null,
+      "description": "Shop Online Techno Blue Special Offer +5 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Techno Blue Special Offer +5 Days left",
+      "confidence": 0.45,
+      "id": "0bdd950cdb87f469b671",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "274e0fbc091369fc6aa1c0493a814a0c01df09518d0748394eaec8eed3205622",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "10c4abfcde3f76b92d21": {
+      "store_name": "Mall promotion",
+      "title": "+16 Days left 25% Off View Details Shop Online",
+      "title_ar": null,
+      "description": "+16 Days left 25% Off View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": "25% Off",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+16 Days left 25% Off View Details Shop Online",
+      "confidence": 0.65,
+      "id": "10c4abfcde3f76b92d21",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "037a40ce13a81514d3664e02b2968a5e698b1ecdbf4ec3a437b5dbf17296e2a4",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "320fb80f32daeaa249e9": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour 25% Off +5 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour 25% Off +5 Days left Source: D4D Qatar Offers",
+      "discount_text": "25% Off",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour 25% Off +5 Days left",
+      "confidence": 0.65,
+      "id": "320fb80f32daeaa249e9",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "b666698a5591415860b57b5416cd9fb62d299ac328de4956e21c87523931e10f",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "2631e38023cba3a4362e": {
+      "store_name": "Samsung",
+      "title": "The Samsung Galaxy Tab S12 Ultra & S12+ are now live for pre-order on Electronyat! Ends today Sale Upto 50% Off View Details Safari Hypermarket",
+      "title_ar": null,
+      "description": "The Samsung Galaxy Tab S12 Ultra & S12+ are now live for pre-order on Electronyat! Ends today Sale Upto 50% Off View Details Safari Hypermarket Source: D4D Qatar Offers",
+      "discount_text": "50% Off",
+      "category": "electronics",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "The Samsung Galaxy Tab S12 Ultra & S12+ are now live for pre-order on Electronyat! Ends today Sale Upto 50% Off View Details Safari Hypermarket",
+      "confidence": 0.65,
+      "id": "2631e38023cba3a4362e",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "8f64ff8de84411a0a5d974551faa29a5d30783908fddc945f64d8c009ae46a8d",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "cbd060b8c9d29664843a": {
+      "store_name": "Mall promotion",
+      "title": "View Details Safari Hypermarket Sale Upto 50% Off +10 Days left",
+      "title_ar": null,
+      "description": "View Details Safari Hypermarket Sale Upto 50% Off +10 Days left Source: D4D Qatar Offers",
+      "discount_text": "50% Off",
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "View Details Safari Hypermarket Sale Upto 50% Off +10 Days left",
+      "confidence": 0.65,
+      "id": "cbd060b8c9d29664843a",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "bd4fc41fcd3cec9e2fdd08f60e578ecc14012f9e6adcfc1c95d8601c86efe91a",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "f6d02ab2368f40415669": {
+      "store_name": "Mall promotion",
+      "title": "+10 Days left Special Offer View Details Order via WhatsApp",
+      "title_ar": null,
+      "description": "+10 Days left Special Offer View Details Order via WhatsApp Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+10 Days left Special Offer View Details Order via WhatsApp",
+      "confidence": 0.45,
+      "id": "f6d02ab2368f40415669",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "47c55e869cf8b18efc065643e32475f6b470052dd823dd68b09bb7c04eb5dd56",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "8057d2629774dff787e9": {
+      "store_name": "Mall promotion",
+      "title": "+77 Days left Special Offer View Details Shop Online",
+      "title_ar": null,
+      "description": "+77 Days left Special Offer View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+77 Days left Special Offer View Details Shop Online",
+      "confidence": 0.45,
+      "id": "8057d2629774dff787e9",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "2dba6d4d6fbc945ebccd616ffd376d980dfaf12601bce8f97ee771ef40b0718e",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "3a7afdfc1f36e0d0e20f": {
+      "store_name": "Mall promotion",
+      "title": "Shop Online Techno Blue Special Offer Ends today Cool Saver",
+      "title_ar": null,
+      "description": "Shop Online Techno Blue Special Offer Ends today Cool Saver Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Techno Blue Special Offer Ends today Cool Saver",
+      "confidence": 0.45,
+      "id": "3a7afdfc1f36e0d0e20f",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:42+03:00",
+      "last_source_hash": "08564e7222f5b68516973302238787ebd49dcb971d86003305ba2a71ced7c931",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "88b4c112e3825dafddd4": {
+      "store_name": "Mall promotion",
+      "title": "Whatsapp / Call Order Saudia Hypermarket Special Offer +16 Days left",
+      "title_ar": null,
+      "description": "Whatsapp / Call Order Saudia Hypermarket Special Offer +16 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Whatsapp / Call Order Saudia Hypermarket Special Offer +16 Days left",
+      "confidence": 0.45,
+      "id": "88b4c112e3825dafddd4",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "fcbda0f2c64ceb46001fc7847f5a9f6929e65a6a1bc279923914a4fe4ac17468",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "6c8391bcafd445b738ad": {
+      "store_name": "Mall promotion",
+      "title": "+16 Days left Special Offer View Details Kenz Mini Mart",
+      "title_ar": null,
+      "description": "+16 Days left Special Offer View Details Kenz Mini Mart Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+16 Days left Special Offer View Details Kenz Mini Mart",
+      "confidence": 0.45,
+      "id": "6c8391bcafd445b738ad",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "809a3c95da1817147fa44d154b7b4df0fef54285e72c84ee611a1d09a68c4c47",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "f8678029d66a75a9626d": {
+      "store_name": "Mall promotion",
+      "title": "View Details Kenz Mini Mart Special Offer +16 Days left",
+      "title_ar": null,
+      "description": "View Details Kenz Mini Mart Special Offer +16 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "View Details Kenz Mini Mart Special Offer +16 Days left",
+      "confidence": 0.45,
+      "id": "f8678029d66a75a9626d",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "19e4184d52e1a332212bd820bbc16e3dcd37dc81d836dfc0246e2ff669f499d6",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "424277e92930712042e5": {
+      "store_name": "Mall promotion",
+      "title": "+2 Days left Sale 20% - 50% Off View Details Whatsapp / Call Order",
+      "title_ar": null,
+      "description": "+2 Days left Sale 20% - 50% Off View Details Whatsapp / Call Order Source: D4D Qatar Offers",
+      "discount_text": "20%",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+2 Days left Sale 20% - 50% Off View Details Whatsapp / Call Order",
+      "confidence": 0.65,
+      "id": "424277e92930712042e5",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "863f6388ddd19dd67d15c067306e72e6d8ddbe4bc1e51eff3cb43122fa3dc2b1",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "b06162a5ebe70f0327b1": {
+      "store_name": "Mall promotion",
+      "title": "Whatsapp / Call Order Saudia Hypermarket Sale 20% - 50% Off +2 Days left",
+      "title_ar": null,
+      "description": "Whatsapp / Call Order Saudia Hypermarket Sale 20% - 50% Off +2 Days left Source: D4D Qatar Offers",
+      "discount_text": "20%",
+      "category": "grocery",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Whatsapp / Call Order Saudia Hypermarket Sale 20% - 50% Off +2 Days left",
+      "confidence": 0.65,
+      "id": "b06162a5ebe70f0327b1",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "f65d5c1b924f25a6c142e9c6e3c7f5ef25d229043135c2494f72a264417ae71d",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "bc685ce259efbf78ce09": {
+      "store_name": "Mall promotion",
+      "title": "+2 Days left Buy 50 QR of Gillette or Venus Win the chance to watch AUDI REVOLUT F1 Team Live View Details Shop Online",
+      "title_ar": null,
+      "description": "+2 Days left Buy 50 QR of Gillette or Venus Win the chance to watch AUDI REVOLUT F1 Team Live View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": "50 QR",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": "50 QR",
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+2 Days left Buy 50 QR of Gillette or Venus Win the chance to watch AUDI REVOLUT F1 Team Live View Details Shop Online",
+      "confidence": 0.65,
+      "id": "bc685ce259efbf78ce09",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "f7dc3b256afb0f0442b9ffeb2574d766b75def08591fef8d867ea37552026e97",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "9c68a93f816b0da83246": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour Buy 50 QR of Gillette or Venus Win the chance to watch AUDI REVOLUT F1 Team Live +23 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour Buy 50 QR of Gillette or Venus Win the chance to watch AUDI REVOLUT F1 Team Live +23 Days left Source: D4D Qatar Offers",
+      "discount_text": "50 QR",
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": "50 QR",
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour Buy 50 QR of Gillette or Venus Win the chance to watch AUDI REVOLUT F1 Team Live +23 Days left",
+      "confidence": 0.65,
+      "id": "9c68a93f816b0da83246",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "8a963ffb57efed1a5279df4f99f3c8cba81ec647e46b33f51ee0e661a78b4f0c",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "3c57f10ba85efaeb16f1": {
+      "store_name": "Mall promotion",
+      "title": "+69 Days left Free Delivery in 60 mins View Details Shop Online",
+      "title_ar": null,
+      "description": "+69 Days left Free Delivery in 60 mins View Details Shop Online Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "+69 Days left Free Delivery in 60 mins View Details Shop Online",
+      "confidence": 0.45,
+      "id": "3c57f10ba85efaeb16f1",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "2ee113d4c1e1722fa4fc201dd5e460eb75f7caf590051da69bf63abaac859329",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
+      "days_since_seen": 0
+    },
+    "37dd38da87d8e05c296f": {
+      "store_name": "Carrefour",
+      "title": "Shop Online Carrefour Free Delivery in 60 mins +77 Days left",
+      "title_ar": null,
+      "description": "Shop Online Carrefour Free Delivery in 60 mins +77 Days left Source: D4D Qatar Offers",
+      "discount_text": null,
+      "category": "other",
+      "start_date": null,
+      "end_date": null,
+      "language": "en",
+      "source_url": "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com",
+      "image_url": null,
+      "original_price": null,
+      "sale_price": null,
+      "promo_code": null,
+      "terms": null,
+      "redemption_instructions": null,
+      "evidence": "Shop Online Carrefour Free Delivery in 60 mins +77 Days left",
+      "confidence": 0.45,
+      "id": "37dd38da87d8e05c296f",
+      "mall_id": "web-discovery",
+      "mall_name": "Web discovery",
+      "origin": "local_extractor",
+      "verification_status": "pending",
+      "verification_reason": "Discovered candidate requires source verification or manual review.",
+      "verified_at": null,
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "last_checked_at": "2026-10-15T00:19:43+03:00",
+      "last_source_hash": "453936b797b413f576fc83045c7d6d79b3f8184639292e3c9447f5f8ba36b40d",
+      "manual_status": "auto",
+      "manual_fields": [],
+      "is_active": false,
       "days_since_seen": 0
     }
   },
   "jobs": {
     "last_run": {
-      "started_at": "2026-10-14T19:37:24+03:00",
-      "finished_at": "2026-10-14T19:37:36+03:00",
+      "started_at": "2026-10-15T00:19:31+03:00",
+      "finished_at": "2026-10-15T00:19:43+03:00",
       "sources_checked": 9,
       "discovery_candidates": 0,
-      "offers_total": 207,
+      "offers_total": 251,
       "active_total": 19,
       "failures": [
         {
@@ -7416,47 +8943,47 @@
   },
   "sources": {
     "https://www.mallofqatar.com.qa/en/home-v2": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://www.dohafestivalcity.com/home/": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://placevendomeqatar.com/": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://www.villaggioqatar.com/en": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "error",
       "error": "robots.txt disallows or URL is not public: https://www.villaggioqatar.com/en"
     },
     "https://citycenterdoha.com/": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://ezdanmall.qa/": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://www.tawarmall.qa/": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://www.alhazm.com/en/home": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     },
     "https://d4donline.com/en/qatar/doha/offers?utm_source=chatgpt.com": {
-      "checked_at": "2026-10-14T19:37:24+03:00",
+      "checked_at": "2026-10-15T00:19:31+03:00",
       "status": "ok",
       "error": null
     }
