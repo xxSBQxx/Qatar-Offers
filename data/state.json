@@ -6,7 +6,7 @@
    "offer_ids": []
   },
   "https://mallofqatar.com.qa/en/events/Gear-Up-Win": {
-   "hash": "2a2e921bd5282f9bf25c4d67f6f498a28b25f4e7",
+   "hash": "daf8b58d4147a818f83bcbf9909f242783389f9f",
    "offer_ids": [
     "d11212d810a95b66",
     "f0f3f198817ae60c",
@@ -80,8 +80,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "f0f3f198817ae60c": {
    "store_name": "Mall promotion",
@@ -118,8 +118,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "60bf3d430f9a6514": {
    "store_name": "Mall promotion",
@@ -156,8 +156,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "a7af6d42c86b084b": {
    "store_name": "Mall promotion",
@@ -194,8 +194,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "9232a6df4f30024d": {
    "store_name": "Mall promotion",
@@ -232,8 +232,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "39638268d5ba745f": {
    "store_name": "Mall promotion",
@@ -270,8 +270,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "b41765aa0f77707d": {
    "store_name": "Mall promotion",
@@ -308,8 +308,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "4b55bc09b1acae73": {
    "store_name": "Mall promotion",
@@ -346,8 +346,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "bfde9fa5e87df317": {
    "store_name": "Carrefour",
@@ -384,8 +384,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "f148102bc4f52b71": {
    "store_name": "Carrefour",
@@ -422,8 +422,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "d3d1ae2c1a14b6f9": {
    "store_name": "Mall promotion",
@@ -460,8 +460,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "990dda28436e9186": {
    "store_name": "Mall promotion",
@@ -498,8 +498,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "46f607e4520da517": {
    "store_name": "Mall promotion",
@@ -536,8 +536,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "c7f71e29e4e06710": {
    "store_name": "Mall promotion",
@@ -574,8 +574,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "5ac0b6cff221cb56": {
    "store_name": "Carrefour",
@@ -612,8 +612,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
-   "last_checked_at": "2026-10-15 20:03 AST"
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 00:24 AST"
   },
   "5f57172ee50d26eb": {
    "store_name": "Mall promotion",
@@ -692,7 +692,7 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
+   "last_seen": "2026-10-16",
    "last_checked_at": "2026-10-15 10:55 AST"
   },
   "55bc70ea196ac7e1": {
@@ -733,7 +733,7 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15",
+   "last_seen": "2026-10-16",
    "last_checked_at": "2026-10-15 20:03 AST"
   }
  },
