@@ -1,1 +1,709 @@
-{"updated":null,"status":[],"errors":[],"offers":[]}
+{
+ "updated": "2026-10-15 10:25 AST",
+ "timezone": "Asia/Qatar",
+ "status": [
+  {
+   "id": "mall-of-qatar",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": [
+    {
+     "title": "www.mallofqatar.com.qa/en/whats-new",
+     "url": "https://www.mallofqatar.com.qa/en/whats-new",
+     "rendered": false
+    },
+    {
+     "title": "mallofqatar.com.qa/en/events/Gear-Up-Win",
+     "url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+     "rendered": false
+    }
+   ]
+  },
+  {
+   "id": "doha-festival-city",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": [
+    {
+     "title": "www.dohafestivalcity.com/home/whats-on/offers",
+     "url": "https://www.dohafestivalcity.com/home/whats-on/offers",
+     "rendered": false
+    }
+   ]
+  },
+  {
+   "id": "place-vendome",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": [
+    {
+     "title": "www.placevendomeqatar.com/en",
+     "url": "https://www.placevendomeqatar.com/en",
+     "rendered": false
+    }
+   ]
+  },
+  {
+   "id": "villaggio",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": []
+  },
+  {
+   "id": "city-center",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": []
+  },
+  {
+   "id": "ezdan-mall",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": [
+    {
+     "title": "gharrafa.ezdanmall.qa/promotions",
+     "url": "https://gharrafa.ezdanmall.qa/promotions",
+     "rendered": false
+    },
+    {
+     "title": "wakra.ezdanmall.qa/promotions",
+     "url": "https://wakra.ezdanmall.qa/promotions",
+     "rendered": false
+    },
+    {
+     "title": "wukair.ezdanmall.qa/promotions",
+     "url": "https://wukair.ezdanmall.qa/promotions",
+     "rendered": false
+    }
+   ]
+  },
+  {
+   "id": "lagoona-mall",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": []
+  },
+  {
+   "id": "tawar-mall",
+   "checked_at": "2026-10-15 10:25 AST",
+   "sources": [
+    {
+     "title": "tawarmall.qa/",
+     "url": "http://tawarmall.qa/",
+     "rendered": false
+    }
+   ]
+  }
+ ],
+ "errors": [
+  {
+   "mall": "villaggio",
+   "url": "https://www.villaggioqatar.com/en",
+   "error": "HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fa"
+  },
+  {
+   "mall": "city-center",
+   "url": "https://citycenterdoha.com/brands-for-less/",
+   "error": "robots.txt disallowed this URL"
+  },
+  {
+   "mall": "lagoona-mall",
+   "url": "https://www.lagoonamall.com",
+   "error": "robots.txt disallowed this URL"
+  }
+ ],
+ "offers": [
+  {
+   "id": "d11212d810a95b66",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Carrefour",
+   "mall_name": "Mall of Qatar",
+   "title": "02498 Carrefour Voucher 500 QAR Mohsin Sarhan",
+   "title_ar": null,
+   "description": "02498 Carrefour Voucher 500 QAR Mohsin Sarhan",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Carrefour Voucher",
+    "QAR Mohsin Sarhan"
+   ],
+   "has_terms": false,
+   "category": "Groceries",
+   "subcategory": "Supermarket",
+   "tags": [],
+   "category_confidence": 0.4,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "bfde9fa5e87df317",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Carrefour",
+   "mall_name": "Mall of Qatar",
+   "title": "11306 Carrefour Voucher 500 QAR Ali Alsafran",
+   "title_ar": null,
+   "description": "11306 Carrefour Voucher 500 QAR Ali Alsafran",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Carrefour Voucher",
+    "QAR Ali Alsafran"
+   ],
+   "has_terms": false,
+   "category": "Groceries",
+   "subcategory": "Supermarket",
+   "tags": [],
+   "category_confidence": 0.4,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "f148102bc4f52b71",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Carrefour",
+   "mall_name": "Mall of Qatar",
+   "title": "01842 Carrefour Voucher 500 QAR Alsin Saguinsin",
+   "title_ar": null,
+   "description": "01842 Carrefour Voucher 500 QAR Alsin Saguinsin",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Carrefour Voucher",
+    "QAR Alsin Saguinsin"
+   ],
+   "has_terms": false,
+   "category": "Groceries",
+   "subcategory": "Supermarket",
+   "tags": [],
+   "category_confidence": 0.4,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "5ac0b6cff221cb56",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Carrefour",
+   "mall_name": "Mall of Qatar",
+   "title": "08393 Carrefour Voucher 500 QAR Click here",
+   "title_ar": null,
+   "description": "08393 Carrefour Voucher 500 QAR Click here",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Carrefour Voucher",
+    "QAR Click"
+   ],
+   "has_terms": false,
+   "category": "Groceries",
+   "subcategory": "Supermarket",
+   "tags": [],
+   "category_confidence": 0.4,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "f0f3f198817ae60c",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "10692 Gift Card 500 QAR Muwaffur Elshaikh",
+   "title_ar": null,
+   "description": "10692 Gift Card 500 QAR Muwaffur Elshaikh",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Muwaffur Elshaikh"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "60bf3d430f9a6514",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "04872 Gift Card 500 QAR Jillbert",
+   "title_ar": null,
+   "description": "04872 Gift Card 500 QAR Jillbert",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Jillbert"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "a7af6d42c86b084b",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "15112 Gift Card 500 QAR Fatima Alhmadi",
+   "title_ar": null,
+   "description": "15112 Gift Card 500 QAR Fatima Alhmadi",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Fatima Alhmadi"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "9232a6df4f30024d",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "07620 Gift Card 500 QAR Fatima Alhmadi",
+   "title_ar": null,
+   "description": "07620 Gift Card 500 QAR Fatima Alhmadi",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Fatima Alhmadi"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "39638268d5ba745f",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "04653 Gift Card 500 QAR Sultan Al Rwaili",
+   "title_ar": null,
+   "description": "04653 Gift Card 500 QAR Sultan Al Rwaili",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Sultan Al Rwaili"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "b41765aa0f77707d",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "12341 Gift Card 500 QAR Khalid Fahad Almdalha",
+   "title_ar": null,
+   "description": "12341 Gift Card 500 QAR Khalid Fahad Almdalha",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Khalid Fahad Almdalha"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "4b55bc09b1acae73",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "11366 Gift Card 1000 QAR Baraa Kamal Babli",
+   "title_ar": null,
+   "description": "11366 Gift Card 1000 QAR Baraa Kamal Babli",
+   "discount_text": "1000 QAR",
+   "promo_code": null,
+   "price": "1000",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Baraa Kamal Babli"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "d3d1ae2c1a14b6f9",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "14214 Gift Card 500 QAR Jean Mavel",
+   "title_ar": null,
+   "description": "14214 Gift Card 500 QAR Jean Mavel",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Jean Mavel"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "990dda28436e9186",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "07279 Gift Card 500 QAR Jassem Al Obaidli",
+   "title_ar": null,
+   "description": "07279 Gift Card 500 QAR Jassem Al Obaidli",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Jassem Al Obaidli"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "46f607e4520da517",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "04141 Gift Card 500 QAR Rashid Soud",
+   "title_ar": null,
+   "description": "04141 Gift Card 500 QAR Rashid Soud",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Rashid Soud"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "c7f71e29e4e06710",
+   "mall_id": "mall-of-qatar",
+   "store_name": "Mall promotion",
+   "mall_name": "Mall of Qatar",
+   "title": "10080 Gift Card 500 QAR Roman Gonzaler",
+   "title_ar": null,
+   "description": "10080 Gift Card 500 QAR Roman Gonzaler",
+   "discount_text": "500 QAR",
+   "promo_code": null,
+   "price": "500",
+   "image": null,
+   "products": [
+    "Gift Card",
+    "QAR Roman Gonzaler"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
+   "seen_sources": [
+    "https://mallofqatar.com.qa/en/events/Gear-Up-Win"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "5f57172ee50d26eb",
+   "mall_id": "place-vendome",
+   "store_name": "Mall promotion",
+   "mall_name": "Place Vendôme Qatar",
+   "title": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 12 am Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still",
+   "title_ar": null,
+   "description": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 12 am Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it A Destination filled with Joy and",
+   "discount_text": "0 %",
+   "promo_code": null,
+   "price": null,
+   "image": null,
+   "products": [
+    "Shopping Mall",
+    "Doha",
+    "Qatar",
+    "Place",
+    "Opening Soon"
+   ],
+   "has_terms": false,
+   "category": "Beauty",
+   "subcategory": "Skincare",
+   "tags": [],
+   "category_confidence": 0.9,
+   "needs_review": false,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "https://www.placevendomeqatar.com/en",
+   "seen_sources": [
+    "https://www.placevendomeqatar.com/en"
+   ],
+   "language": "ar",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "65d4d61cd4846868",
+   "mall_id": "tawar-mall",
+   "store_name": "Mall promotion",
+   "mall_name": "Tawar Mall",
+   "title": "Lost & Found Free Wi-Fi Wheelchair & Baby Stroller",
+   "title_ar": null,
+   "description": "Lost & Found Free Wi-Fi Wheelchair & Baby Stroller",
+   "discount_text": "Free",
+   "promo_code": null,
+   "price": null,
+   "image": null,
+   "products": [
+    "Lost",
+    "Found Free Wi-Fi Wheelchair",
+    "Baby Stroller"
+   ],
+   "has_terms": false,
+   "category": "Other",
+   "subcategory": "Uncategorized",
+   "tags": [],
+   "category_confidence": 0.15,
+   "needs_review": true,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-15 10:25 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-15",
+   "source_url": "http://tawarmall.qa/",
+   "seen_sources": [
+    "http://tawarmall.qa/"
+   ],
+   "language": "en",
+   "origin": "local_extractor"
+  }
+ ]
+}

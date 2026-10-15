@@ -1,1 +1,50 @@
-[]
+[
+ {
+  "id": "mall-of-qatar",
+  "name": "Mall of Qatar",
+  "name_ar": "مول قطر",
+  "area": "Al Rayyan"
+ },
+ {
+  "id": "doha-festival-city",
+  "name": "Doha Festival City",
+  "name_ar": "دوحة فستيفال سيتي",
+  "area": "Umm Salal"
+ },
+ {
+  "id": "place-vendome",
+  "name": "Place Vendôme Qatar",
+  "name_ar": "بلاس فاندوم قطر",
+  "area": "Lusail"
+ },
+ {
+  "id": "villaggio",
+  "name": "Villaggio Mall",
+  "name_ar": "فيلاجيو مول",
+  "area": "Al Waab"
+ },
+ {
+  "id": "city-center",
+  "name": "City Center Doha",
+  "name_ar": "سيتي سنتر الدوحة",
+  "area": "West Bay"
+ },
+ {
+  "id": "ezdan-mall",
+  "name": "Ezdan Mall",
+  "name_ar": "إيزدان مول",
+  "area": "Al Gharaffa, Al Wakra, Al Wukair"
+ },
+ {
+  "id": "lagoona-mall",
+  "name": "Lagoona Mall",
+  "name_ar": "لاجونا مول",
+  "area": "West Bay"
+ },
+ {
+  "id": "tawar-mall",
+  "name": "Tawar Mall",
+  "name_ar": "طوار مول",
+  "area": "Al Tarfa"
+ }
+]
