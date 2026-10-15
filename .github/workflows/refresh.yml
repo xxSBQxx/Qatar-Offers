@@ -1,9 +1,10 @@
-name: Discover, verify, and publish Qatar offers
+name: Refresh offers
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"
   workflow_dispatch:
+  schedule:
+    # Every six hours (GitHub Actions cron uses UTC).
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: write
@@ -11,86 +12,92 @@ permissions:
   id-token: write
 
 concurrency:
-  group: qatar-offers-refresh-main
+  group: qatar-offers-pages
   cancel-in-progress: false
 
 jobs:
-  refresh-and-deploy:
+  refresh:
+    name: Discover and refresh Qatar offers
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: main
-          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
           cache: pip
           cache-dependency-path: crawler/requirements.txt
 
-      - name: Install permitted local OCR tools
+      - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-ara
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-ara
 
       - name: Install Python dependencies
-        run: python -m pip install --disable-pip-version-check -r crawler/requirements.txt
-
-      # If main changes while collection is running, start from the latest commit and
-      # recollect against its code/config/data. Never force-push over newer work.
-      - name: Collect offers and safely publish generated data
-        shell: bash
-        env:
-          TZ: Asia/Qatar
-          CRAWLER_SLEEP: "2"
-          MAX_NEW_IMAGES: "25"
-          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
-          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
-          GOOGLE_CSE_MAX_QUERIES: "20"
-          RSS_SEARCH_QUERIES_PER_RUN: "8"
         run: |
-          set -euo pipefail
-          git config user.name "offers-bot"
-          git config user.email "bot@users.noreply.github.com"
-          published=0
-          for attempt in 1 2 3; do
-            echo "Collection/publish attempt ${attempt}/3"
-            git fetch origin main
-            git reset --hard origin/main
-            python crawler/run.py
-            git add data/state.json web/offers.json web/malls.json
-            if git diff --cached --quiet; then
-              echo "No generated data changes to commit."
-              published=1
-              break
-            fi
-            git commit -m "Refresh verified Qatar offers"
-            if git push origin HEAD:main; then
-              published=1
-              break
-            fi
-            echo "Remote main advanced during publish; retrying from the latest commit."
-            sleep "$attempt"
-          done
-          if [[ "$published" != "1" ]]; then
-            echo "Could not publish after three safe attempts." >&2
-            exit 1
+          python -m pip install --upgrade pip
+          python -m pip install -r crawler/requirements.txt
+
+      - name: Install Chromium for JavaScript-rendered pages
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run automated crawler regression tests
+        working-directory: crawler
+        run: python test_run.py
+
+      - name: Discover new official sources
+        env:
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
+          BING_SEARCH_KEY: ${{ secrets.BING_SEARCH_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python crawler/discover.py
+
+      - name: Refresh offers
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_CLASSIFY_MODEL: ${{ vars.ANTHROPIC_CLASSIFY_MODEL }}
+          AI_CALL_BUDGET: '40'
+          AI_SLEEP: '1.5'
+          FETCH_RETRIES: '3'
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
+          BING_SEARCH_KEY: ${{ secrets.BING_SEARCH_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python crawler/run.py
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Persist refreshed data and discovery queue
+        run: |
+          git add web/offers.json web/malls.json data/state.json data/discovered_sources.json data/run.log
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh Qatar offers [skip ci]"
+            git push
+          else
+            echo "No generated data changes to commit."
           fi
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Package static website
+      - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: web
-      - name: Deploy website
-        id: deploy
+
+      - name: Deploy website to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
