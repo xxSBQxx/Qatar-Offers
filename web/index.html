@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qatar Offers — Real, verified deals from malls across Qatar</title>
+<meta name="description" content="Browse live, verified offers from malls across Qatar. Search, filter by category, and track prices, discounts and expiry dates — refreshed automatically from official sources.">
+<meta name="theme-color" content="#7A1430">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="canonical" href="index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qatar Offers">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="header-slot"></div>
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <h1 id="heroTitle"></h1>
+        <p class="lede" id="heroLede"></p>
+        <form class="search-shell" id="heroSearch" role="search">
+          <label class="visually-hidden" for="heroSearchInput" id="searchLabel"></label>
+          <input id="heroSearchInput" type="search" name="q" autocomplete="off">
+          <button type="submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <span id="searchBtnLabel"></span>
+          </button>
+        </form>
+        <div class="hero-stats" id="heroStats" aria-live="polite"></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="geo" width="52" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(10)">
+              <path d="M26 0 52 26 26 52 0 26Z" fill="none" stroke="rgba(251,244,236,.16)" stroke-width="1.3"/>
+              <circle cx="26" cy="26" r="3.2" fill="rgba(251,244,236,.14)"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="400" fill="url(#geo)"/>
+        </svg>
+        <span class="chip-float" style="top:14%; inset-inline-start:10%">%</span>
+        <span class="chip-float" style="top:46%; inset-inline-end:12%">QAR</span>
+        <span class="chip-float" style="top:74%; inset-inline-start:18%">-50%</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2 id="catHeading"></h2><p id="catSub"></p></div>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="featured-section" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2 id="featHeading"></h2><p id="featSub"></p></div>
+        <a class="more" href="#browse" id="featMore"></a>
+      </div>
+      <div class="rail" id="featRail"></div>
+    </div>
+  </section>
+
+  <section class="section" id="trending-section" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2 id="trendHeading"></h2><p id="trendSub"></p></div>
+      </div>
+      <div class="cat-grid" id="trendGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="latest-section" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2 id="latestHeading"></h2><p id="latestSub"></p></div>
+      </div>
+      <div class="rail" id="latestRail"></div>
+    </div>
+  </section>
+
+  <section class="section" id="browse">
+    <div class="wrap">
+      <div class="section-head"><div><h2 id="browseHeading"></h2></div></div>
+      <div class="toolbar">
+        <form class="search-shell" id="browseSearchForm" role="search">
+          <label class="visually-hidden" for="browseSearchInput"></label>
+          <input id="browseSearchInput" type="search">
+          <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        </form>
+        <select id="catSelect" aria-label="Filter by category"></select>
+        <select id="mallSelect" aria-label="Filter by mall"></select>
+        <select id="sortSelect" aria-label="Sort offers"></select>
+        <button type="button" class="pill-btn" id="verifiedToggle"></button>
+        <button type="button" class="pill-btn" id="promoToggle"></button>
+        <button type="button" class="pill-btn" id="clearFilters"></button>
+      </div>
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+      <div id="browseState"></div>
+      <div class="grid" id="browseGrid"></div>
+      <nav class="pagination" id="browsePagination" aria-label="Pagination"></nav>
+    </div>
+  </section>
+
+  <section class="section" id="favorites">
+    <div class="wrap">
+      <div class="note-banner" id="accountBox">
+        <strong id="accountTitle"></strong>
+        <p id="accountBody" style="margin:6px 0 10px"></p>
+        <form id="accountForm" style="display:flex; gap:8px; flex-wrap:wrap">
+          <input id="accountName" type="text" style="flex:1; min-width:160px; padding:8px 12px; border:1px solid var(--line); border-radius:99px; background:var(--card)">
+          <button type="submit" class="pill-btn" id="accountSave"></button>
+        </form>
+      </div>
+      <div class="section-head"><div><h2 id="favHeading"></h2><p id="favSub"></p></div></div>
+      <div id="favContent"></div>
+    </div>
+  </section>
+
+  <section class="section" id="recent-section" hidden>
+    <div class="wrap">
+      <div class="section-head"><div><h2 id="recentHeading"></h2></div></div>
+      <div class="rail" id="recentRail"></div>
+    </div>
+  </section>
+
+</main>
+<div id="footer-slot"></div>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  const tr = QO.t();
+  QO.wireChrome("home");
+  QO.setSEO({ title: tr.app + " — " + tr.tagline, description: tr.tagline });
+
+  document.getElementById("heroTitle").textContent = tr.app;
+  document.getElementById("heroLede").textContent = tr.tagline;
+  document.getElementById("searchLabel").textContent = tr.search_label;
+  document.getElementById("heroSearchInput").placeholder = tr.search_ph;
+  document.getElementById("searchBtnLabel").textContent = tr.search_btn;
+  document.getElementById("catHeading").textContent = tr.categories;
+  document.getElementById("catSub").textContent = tr.categories_sub;
+  document.getElementById("featHeading").textContent = tr.featured;
+  document.getElementById("featSub").textContent = tr.featured_sub;
+  document.getElementById("featMore").textContent = tr.view_all;
+  document.getElementById("trendHeading").textContent = tr.trending;
+  document.getElementById("trendSub").textContent = tr.trending_sub;
+  document.getElementById("latestHeading").textContent = tr.latest;
+  document.getElementById("latestSub").textContent = tr.latest_sub;
+  document.getElementById("browseHeading").textContent = tr.browse_all;
+  document.getElementById("browseSearchInput").placeholder = tr.search_ph;
+  document.getElementById("favHeading").textContent = tr.favorites_title;
+  document.getElementById("favSub").textContent = tr.favorites_sub;
+  document.getElementById("recentHeading").textContent = tr.recently_viewed;
+  document.getElementById("accountTitle").textContent = tr.account_title;
+  document.getElementById("accountBody").textContent = tr.account_body;
+  document.getElementById("accountName").placeholder = tr.account_name_ph;
+  document.getElementById("accountSave").textContent = tr.account_save;
+  document.getElementById("accountName").value = QO.Profile.get().name || "";
+  document.getElementById("accountForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    QO.Profile.set({ name: document.getElementById("accountName").value.trim() });
+    QO.toast(tr.account_save + " ✓");
+  });
+  document.getElementById("verifiedToggle").textContent = tr.verified_only;
+  document.getElementById("promoToggle").textContent = tr.has_promo;
+  document.getElementById("clearFilters").textContent = tr.clear_filters;
+
+  document.getElementById("catSelect").setAttribute("aria-label", tr.filter_cat);
+  document.getElementById("mallSelect").setAttribute("aria-label", tr.filter_mall);
+  document.getElementById("sortSelect").setAttribute("aria-label", tr.sort);
+  const catSelect = document.getElementById("catSelect");
+  catSelect.innerHTML = `<option value="">${tr.filter_cat}: ${tr.filter_all}</option>` +
+    QO.CAT_ORDER.map(c => `<option value="${c}">${QO.esc(QO.categoryLabel(c))}</option>`).join("");
+  const sortSelect = document.getElementById("sortSelect");
+  sortSelect.innerHTML = [
+    ["new", tr.sort_new], ["expiry", tr.sort_expiry], ["az", tr.sort_az], ["disc", tr.sort_disc]
+  ].map(([v,l]) => `<option value="${v}">${tr.sort}: ${QO.esc(l)}</option>`).join("");
+
+  document.getElementById("catGrid").innerHTML = QO.skeletonCards(8);
+  document.getElementById("browseState").innerHTML = `<div class="grid">${QO.skeletonCards(6)}</div>`;
+
+  let DATA = null;
+  let filters = { q:"", cat:"", mall:"", verifiedOnly:false, hasPromo:false, sort:"new" };
+  let page = 1;
+  const PER_PAGE = 12;
+
+  function syncFromHash(){
+    if (location.hash.startsWith("#q=")) {
+      filters.q = decodeURIComponent(location.hash.slice(3));
+      document.getElementById("browseSearchInput").value = filters.q;
+      document.getElementById("heroSearchInput").value = filters.q;
+    }
+  }
+
+  function renderCategories(offers){
+    const counts = {};
+    offers.forEach(o => counts[o.category] = (counts[o.category]||0)+1);
+    const cats = QO.CAT_ORDER.filter(c => counts[c]);
+    document.getElementById("catGrid").innerHTML = cats.map(c => `
+      <a class="cat-tile" href="#browse" data-cat="${c}">
+        ${QO.categoryIcon(c, "ic")}
+        <b>${QO.esc(QO.categoryLabel(c))}</b>
+        <span>${QO.t().live_offers_n(counts[c])}</span>
+      </a>`).join("") || QO.emptyState(QO.t().empty_title, QO.t().empty_body);
+    document.getElementById("catGrid").querySelectorAll("[data-cat]").forEach(a => a.addEventListener("click", (e) => {
+      e.preventDefault(); filters.cat = a.dataset.cat; catSelect.value = filters.cat; page = 1; renderBrowse(); scrollToBrowse();
+    }));
+  }
+
+  function renderFeatured(offers){
+    const featured = offers.filter(o => !o.needs_review && (o.category_confidence==null||o.category_confidence>=0.6)).slice(0, 10);
+    const sec = document.getElementById("featured-section");
+    if (!featured.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    document.getElementById("featRail").innerHTML = featured.map(QO.offerCard).join("");
+  }
+
+  function renderTrending(offers){
+    const byStore = {};
+    offers.forEach(o => { byStore[o.store_name] = (byStore[o.store_name]||0)+1; });
+    const top = Object.entries(byStore).sort((a,b)=>b[1]-a[1]).slice(0,8);
+    const sec = document.getElementById("trending-section");
+    if (!top.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    document.getElementById("trendGrid").innerHTML = top.map(([name,n]) => `
+      <a class="cat-tile" href="merchant.html?name=${QO.slug(name)}">
+        <b>${QO.esc(name)}</b>
+        <span>${QO.t().merchant_offers(n)}</span>
+      </a>`).join("");
+  }
+
+  function renderLatest(offers){
+    const latest = offers.slice().sort((a,b)=>(b.first_seen||"").localeCompare(a.first_seen||"")).slice(0,10);
+    const sec = document.getElementById("latest-section");
+    if (!latest.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    document.getElementById("latestRail").innerHTML = latest.map(QO.offerCard).join("");
+  }
+
+  function scrollToBrowse(){ document.getElementById("browse").scrollIntoView({behavior:"smooth", block:"start"}); }
+
+  function renderBrowse(){
+    if (!DATA) return;
+    const filtered = QO.filterOffers(DATA.offers, filters);
+    document.getElementById("resultCount").textContent = QO.t().results(filtered.length);
+    const state = QO.paginate(filtered, page, PER_PAGE);
+    page = state.page;
+    const grid = document.getElementById("browseGrid");
+    document.getElementById("browseState").innerHTML = "";
+    if (!filtered.length) {
+      grid.innerHTML = "";
+      document.getElementById("browseState").innerHTML = QO.emptyState(QO.t().empty_title, QO.t().empty_body);
+    } else {
+      grid.innerHTML = state.slice.map(QO.offerCard).join("");
+    }
+    QO.renderPagination(document.getElementById("browsePagination"), state, (p) => { page = p; renderBrowse(); scrollToBrowse(); });
+  }
+
+  function renderFavorites(){
+    const favIds = new Set(QO.Favorites.all());
+    const body = document.getElementById("favContent");
+    if (!DATA) { body.innerHTML = QO.skeletonCards(3); return; }
+    const favs = DATA.offers.filter(o => favIds.has(o.id));
+    body.innerHTML = favs.length ? `<div class="grid">${favs.map(QO.offerCard).join("")}</div>`
+      : QO.emptyState(QO.t().favorites_empty_title, QO.t().favorites_empty_body);
+  }
+
+  function renderRecent(){
+    if (!DATA) return;
+    const ids = QO.Recents.all();
+    const byId = {}; DATA.offers.forEach(o => byId[o.id] = o);
+    const items = ids.map(id => byId[id]).filter(Boolean).slice(0, 10);
+    const sec = document.getElementById("recent-section");
+    if (!items.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    document.getElementById("recentRail").innerHTML = items.map(QO.offerCard).join("");
+  }
+
+  function updateHeroStats(meta, mallsCount){
+    const el = document.getElementById("heroStats");
+    const tr2 = QO.t();
+    el.innerHTML = `
+      <div><b>${meta.offers.length}</b><span>${tr2.live_offers}</span></div>
+      <div><b>${mallsCount}</b><span>${tr2.malls_tracked}</span></div>
+      <div><b>${meta.meta.updated ? "" : "—"}</b><span>${tr2.updated}${meta.meta.updated ? ": " + QO.esc(meta.meta.updated) : ""}</span></div>`;
+  }
+
+  async function init(){
+    try {
+      DATA = await QO.loadData();
+    } catch (e) {
+      document.getElementById("browseState").innerHTML = QO.errorState('onclick="location.reload()"');
+      document.getElementById("catGrid").innerHTML = "";
+      return;
+    }
+    const mallNames = [...new Set(DATA.offers.map(o => o.mall_name).filter(Boolean))].sort();
+    document.getElementById("mallSelect").innerHTML = `<option value="">${QO.t().filter_mall}: ${QO.t().filter_all}</option>` +
+      mallNames.map(m => `<option value="${QO.esc(m)}">${QO.esc(m)}</option>`).join("");
+
+    updateHeroStats(DATA, DATA.malls.length || mallNames.length);
+    renderCategories(DATA.offers);
+    renderFeatured(DATA.offers);
+    renderTrending(DATA.offers);
+    renderLatest(DATA.offers);
+    syncFromHash();
+    renderBrowse();
+    renderFavorites();
+    renderRecent();
+    document.querySelectorAll(".grid, .rail").forEach(QO.wireFavButtons);
+    document.body.addEventListener("click", (e) => {
+      if (e.target.closest("[data-fav]")) { renderFavorites(); }
+    });
+    QO.observeReveal(".cat-tile, .offer-card");
+  }
+
+  document.getElementById("heroSearch").addEventListener("submit", (e) => {
+    e.preventDefault();
+    filters.q = document.getElementById("heroSearchInput").value;
+    document.getElementById("browseSearchInput").value = filters.q;
+    page = 1; renderBrowse(); scrollToBrowse();
+  });
+  document.getElementById("browseSearchForm").addEventListener("submit", (e) => {
+    e.preventDefault(); filters.q = document.getElementById("browseSearchInput").value; page = 1; renderBrowse();
+  });
+  document.getElementById("browseSearchInput").addEventListener("input", QO.debounce((e) => {
+    filters.q = e.target.value; page = 1; renderBrowse();
+  }, 280));
+  catSelect.addEventListener("change", () => { filters.cat = catSelect.value; page = 1; renderBrowse(); });
+  document.getElementById("mallSelect").addEventListener("change", (e) => { filters.mall = e.target.value; page = 1; renderBrowse(); });
+  sortSelect.addEventListener("change", () => { filters.sort = sortSelect.value; page = 1; renderBrowse(); });
+  document.getElementById("verifiedToggle").addEventListener("click", (e) => {
+    filters.verifiedOnly = !filters.verifiedOnly; e.target.classList.toggle("on", filters.verifiedOnly); page = 1; renderBrowse();
+  });
+  document.getElementById("promoToggle").addEventListener("click", (e) => {
+    filters.hasPromo = !filters.hasPromo; e.target.classList.toggle("on", filters.hasPromo); page = 1; renderBrowse();
+  });
+  document.getElementById("clearFilters").addEventListener("click", () => {
+    filters = { q:"", cat:"", mall:"", verifiedOnly:false, hasPromo:false, sort:"new" };
+    document.getElementById("browseSearchInput").value = "";
+    document.getElementById("heroSearchInput").value = "";
+    catSelect.value = ""; document.getElementById("mallSelect").value = ""; sortSelect.value = "new";
+    document.getElementById("verifiedToggle").classList.remove("on");
+    document.getElementById("promoToggle").classList.remove("on");
+    page = 1; renderBrowse();
+  });
+
+  init();
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+})();
+</script>
+</body>
+</html>

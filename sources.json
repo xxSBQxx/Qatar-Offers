@@ -1,0 +1,99 @@
+{
+  "_comment": "Each mall is a seed for the crawler, not a guarantee of coverage -- sites differ in whether they expose offers to a crawler at all (see 'render' and 'coverage_note'). URLs were verified reachable by web search/fetch on 2026-10-12. The crawler also tries each mall's sitemap for newer offer/event pages instead of relying only on the hardcoded 'pages' below, so a single stale hardcoded slug can no longer be the sole source of an offer.",
+  "malls": [
+    {
+      "id": "mall-of-qatar",
+      "name": "Mall of Qatar",
+      "name_ar": "مول قطر",
+      "area": "Al Rayyan",
+      "pages": [
+        {"url": "https://www.mallofqatar.com.qa/en/whats-new", "type": "text"}
+      ],
+      "sitemap": {"url": "https://www.mallofqatar.com.qa/sitemap.xml", "contains": "/en/events/"},
+      "render": true,
+      "coverage_note": "mallofqatar.com.qa is a JavaScript single-page app -- confirmed by fetching it directly, its initial HTML is just a loading shell. The crawler renders it with a headless browser (see fetch_engine.py) instead of silently returning nothing. If Playwright/Chromium isn't installed in the run environment, this source yields zero offers rather than stale or invented ones.",
+      "search": false
+    },
+    {
+      "id": "doha-festival-city",
+      "name": "Doha Festival City",
+      "name_ar": "دوحة فستيفال سيتي",
+      "area": "Umm Salal",
+      "pages": [
+        {"url": "https://www.dohafestivalcity.com/home/whats-on/offers", "type": "text"}
+      ],
+      "render": true,
+      "coverage_note": "The offers page shell is server-rendered but the offer cards themselves load via an in-page AJAX call after JS runs, so this also needs the headless-browser render to see real offers.",
+      "search": false
+    },
+    {
+      "id": "place-vendome",
+      "name": "Place Vend\u00f4me Qatar",
+      "name_ar": "بلاس فاندوم قطر",
+      "area": "Lusail",
+      "pages": [
+        {"url": "https://www.placevendomeqatar.com/en", "type": "text"}
+      ],
+      "render": true,
+      "coverage_note": "Added this run as a newly verified source (official site confirmed via search); its offers page structure has not been crawled before, so its first run should be treated as unverified until it has produced and held a real offer with a working source link.",
+      "search": false
+    },
+    {
+      "id": "villaggio",
+      "name": "Villaggio Mall",
+      "name_ar": "فيلاجيو مول",
+      "area": "Al Waab",
+      "pages": [
+        {"url": "https://www.villaggioqatar.com/en", "type": "text"}
+      ],
+      "render": true,
+      "coverage_note": "Newly added, verified official domain; not yet crawled successfully, treat first results as unverified until confirmed.",
+      "search": false
+    },
+    {
+      "id": "city-center",
+      "name": "City Center Doha",
+      "name_ar": "سيتي سنتر الدوحة",
+      "area": "West Bay",
+      "pages": [
+        {"url": "https://citycenterdoha.com/brands-for-less/", "type": "text"}
+      ],
+      "search": false
+    },
+    {
+      "id": "ezdan-mall",
+      "name": "Ezdan Mall",
+      "name_ar": "إيزدان مول",
+      "area": "Al Gharaffa, Al Wakra, Al Wukair",
+      "pages": [
+        {"url": "https://gharrafa.ezdanmall.qa/promotions", "type": "images", "branch": "Al Gharaffa", "image_contains": "/uploads/", "context_must": "Promotion"},
+        {"url": "https://wakra.ezdanmall.qa/promotions", "type": "images", "branch": "Al Wakra", "image_contains": "/uploads/", "context_must": "Promotion"},
+        {"url": "https://wukair.ezdanmall.qa/promotions", "type": "images", "branch": "Al Wukair", "image_contains": "/uploads/", "context_must": "Promotion"}
+      ],
+      "search": false
+    },
+    {
+      "id": "lagoona-mall",
+      "name": "Lagoona Mall",
+      "name_ar": "لاجونا مول",
+      "area": "West Bay",
+      "pages": [
+        {"url": "https://www.lagoonamall.com", "type": "text"}
+      ],
+      "render": true,
+      "coverage_note": "Newly added, verified official domain; not yet crawled successfully, treat first results as unverified until confirmed.",
+      "search": false
+    },
+    {
+      "id": "tawar-mall",
+      "name": "Tawar Mall",
+      "name_ar": "طوار مول",
+      "area": "Al Tarfa",
+      "pages": [
+        {"url": "http://tawarmall.qa/", "type": "text"}
+      ],
+      "coverage_note": "Newly added, verified official domain; not yet crawled successfully, treat first results as unverified until confirmed.",
+      "search": false
+    }
+  ]
+}

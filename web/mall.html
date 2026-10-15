@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malls — Qatar Offers</title>
+<meta name="description" content="Browse Qatar malls and their current live offers on Qatar Offers.">
+<meta name="theme-color" content="#7A1430">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="header-slot"></div>
+<main id="main">
+  <div class="wrap">
+    <nav class="breadcrumb" id="crumb" aria-label="Breadcrumb"></nav>
+  </div>
+  <div id="mallHero"></div>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" id="listHead"><div><h2 id="listHeading"></h2><p id="listSub"></p></div></div>
+      <div id="mallBody"><div class="grid" id="skelGrid"></div></div>
+      <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+    </div>
+  </section>
+</main>
+<div id="footer-slot"></div>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  const tr = QO.t();
+  QO.wireChrome("malls");
+  document.getElementById("skelGrid").innerHTML = QO.skeletonCards(6);
+
+  const id = QO.qs("id");
+  let page = 1;
+  const PER_PAGE = 24;
+
+  function renderMallsIndex(offers, malls){
+    QO.setSEO({ title: tr.malls_title + " | " + tr.app, description: tr.malls_sub });
+    document.getElementById("crumb").innerHTML = `<a href="index.html">${tr.breadcrumb_home}</a><span>/</span><span>${tr.malls_title}</span>`;
+    document.getElementById("listHeading").textContent = tr.malls_title;
+    document.getElementById("listSub").textContent = tr.malls_sub;
+    const byMall = {};
+    offers.forEach(o => { if (o.mall_name) (byMall[o.mall_name] = byMall[o.mall_name] || []).push(o); });
+    // Include every configured mall, even ones with zero live offers right now --
+    // the point of this page is mall coverage, not just malls with current deals.
+    const names = new Set([...malls.map(m => m.name), ...Object.keys(byMall)]);
+    const entries = [...names].map(name => {
+      const meta = malls.find(m => m.name === name) || {};
+      return { name, area: meta.area, count: (byMall[name] || []).length };
+    }).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+    const state = QO.paginate(entries, page, PER_PAGE);
+    page = state.page;
+    document.getElementById("mallBody").innerHTML = entries.length ? `<div class="grid">` + state.slice.map(e => `
+      <a class="cat-tile" href="mall.html?id=${QO.slug(e.name)}">
+        <b>${QO.esc(e.name)}</b>
+        <span>${e.area ? QO.esc(e.area) + " \u00b7 " : ""}${QO.t().live_offers_n(e.count)}</span>
+      </a>`).join("") + `</div>` : QO.emptyState(tr.empty_title, tr.empty_body);
+    QO.renderPagination(document.getElementById("pagination"), state, (p) => { page = p; renderMallsIndex(offers, malls); window.scrollTo({top:0,behavior:"smooth"}); });
+  }
+
+  function renderMallProfile(mallName, offers, malls){
+    const list = offers.filter(o => o.mall_name === mallName);
+    const meta = malls.find(m => m.name === mallName) || {};
+    QO.setSEO({ title: `${mallName} | ${tr.app}`, description: `${QO.t().live_offers_n(list.length)} \u2014 ${mallName}` });
+    document.getElementById("crumb").innerHTML = `<a href="index.html">${tr.breadcrumb_home}</a><span>/</span>
+      <a href="mall.html">${tr.malls_title}</a><span>/</span><span>${QO.esc(mallName)}</span>`;
+    const initials = mallName.trim().split(/\s+/).map(w=>w[0]).slice(0,2).join("").toUpperCase();
+    const cats = [...new Set(list.map(o=>o.category))];
+    document.getElementById("mallHero").innerHTML = `<div class="wrap merchant-hero">
+      <div class="merchant-avatar" aria-hidden="true">${QO.esc(initials)}</div>
+      <div><h1>${QO.esc(mallName)}</h1><p style="color:var(--mute);margin:4px 0 0">${meta.area?QO.esc(meta.area)+" \u00b7 ":""}${QO.t().live_offers_n(list.length)}${cats.length?" \u00b7 "+cats.map(c=>QO.esc(QO.categoryLabel(c))).join(", "):""}</p></div>
+    </div>`;
+    document.getElementById("listHead").hidden = true;
+    if (!list.length) {
+      document.getElementById("mallBody").innerHTML = QO.emptyState(tr.malls_empty_title, tr.malls_empty_body);
+      return;
+    }
+    const state = QO.paginate(list, page, PER_PAGE);
+    page = state.page;
+    document.getElementById("mallBody").innerHTML = `<div class="grid">${state.slice.map(QO.offerCard).join("")}</div>`;
+    QO.wireFavButtons(document.getElementById("mallBody"));
+    QO.renderPagination(document.getElementById("pagination"), state, (p) => { page = p; renderMallProfile(mallName, offers, malls); window.scrollTo({top:0,behavior:"smooth"}); });
+  }
+
+  (async function init(){
+    let DATA;
+    try { DATA = await QO.loadData(); }
+    catch (e) { document.getElementById("mallBody").innerHTML = QO.errorState('onclick="location.reload()"'); return; }
+    if (id) renderMallProfile(QO.unslug(id), DATA.offers, DATA.malls);
+    else renderMallsIndex(DATA.offers, DATA.malls);
+    QO.observeReveal(".cat-tile, .offer-card");
+  })();
+})();
+</script>
+</body>
+</html>
