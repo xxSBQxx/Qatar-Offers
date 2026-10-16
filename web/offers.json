@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-16 00:24 AST",
+ "updated": "2026-10-16 07:34 AST",
  "timezone": "Asia/Qatar",
  "status": [
   {
    "id": "mall-of-qatar",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": [
     {
      "title": "www.mallofqatar.com.qa/en/whats-new",
@@ -20,7 +20,7 @@
   },
   {
    "id": "doha-festival-city",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": [
     {
      "title": "www.dohafestivalcity.com/home/whats-on/offers",
@@ -31,7 +31,7 @@
   },
   {
    "id": "place-vendome",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": [
     {
      "title": "www.placevendomeqatar.com/en",
@@ -42,17 +42,17 @@
   },
   {
    "id": "villaggio",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": []
   },
   {
    "id": "city-center",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": []
   },
   {
    "id": "ezdan-mall",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": [
     {
      "title": "gharrafa.ezdanmall.qa/promotions",
@@ -73,12 +73,12 @@
   },
   {
    "id": "lagoona-mall",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": []
   },
   {
    "id": "tawar-mall",
-   "checked_at": "2026-10-16 00:24 AST",
+   "checked_at": "2026-10-16 07:34 AST",
    "sources": [
     {
      "title": "tawarmall.qa/",
@@ -736,6 +736,44 @@
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
+   "source_url": "https://www.placevendomeqatar.com/en",
+   "seen_sources": [
+    "https://www.placevendomeqatar.com/en"
+   ],
+   "language": "ar",
+   "origin": "local_extractor"
+  },
+  {
+   "id": "08dfed06886c042a",
+   "mall_id": "place-vendome",
+   "store_name": "Mall promotion",
+   "mall_name": "Place Vendôme Qatar",
+   "title": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 11:30 am, 1 pm to 12 am Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where",
+   "title_ar": null,
+   "description": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 11:30 am, 1 pm to 12 am Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it A Destination f",
+   "discount_text": "0 %",
+   "promo_code": null,
+   "price": null,
+   "image": null,
+   "products": [
+    "Shopping Mall",
+    "Doha",
+    "Qatar",
+    "Place",
+    "Opening Soon"
+   ],
+   "has_terms": false,
+   "category": "Beauty",
+   "subcategory": "Skincare",
+   "tags": [],
+   "category_confidence": 0.9,
+   "needs_review": false,
+   "category_method": "rule",
+   "verification": "auto_extracted",
+   "last_checked_at": "2026-10-16 07:34 AST",
+   "start_date": null,
+   "end_date": null,
+   "first_seen": "2026-10-16",
    "source_url": "https://www.placevendomeqatar.com/en",
    "seen_sources": [
     "https://www.placevendomeqatar.com/en"

@@ -30,9 +30,9 @@
    "offer_ids": []
   },
   "https://www.placevendomeqatar.com/en": {
-   "hash": "fb9348b23ab09b96a4403ed3da2dffc824baa81f",
+   "hash": "f0c6ec390eafa1f9cfa762d2beeb64356b74ccbd",
    "offer_ids": [
-    "55bc70ea196ac7e1"
+    "08dfed06886c042a"
    ]
   },
   "http://tawarmall.qa/": {
@@ -735,6 +735,47 @@
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-16",
    "last_checked_at": "2026-10-15 20:03 AST"
+  },
+  "08dfed06886c042a": {
+   "store_name": "Mall promotion",
+   "title": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 11:30 am, 1 pm to 12 am Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where",
+   "title_ar": null,
+   "description": "Shopping Mall in Doha, Qatar | Place Vendôme Opening Soon – 10 am to 11:30 am, 1 pm to 12 am Guest Information العربية Loading 0 % A Destination filled with Joy and happiness Where time stands still and the world sparkles When Beauty Blossoms Inside Out Luxury for those who define it A Destination f",
+   "discount_text": "0 %",
+   "promo_code": null,
+   "price": null,
+   "image": null,
+   "products": [
+    "Shopping Mall",
+    "Doha",
+    "Qatar",
+    "Place",
+    "Opening Soon"
+   ],
+   "has_terms": false,
+   "category": "Beauty",
+   "subcategory": "Skincare",
+   "tags": [],
+   "category_confidence": 0.9,
+   "needs_review": false,
+   "category_method": "rule",
+   "start_date": null,
+   "end_date": null,
+   "language": "ar",
+   "source_url": "https://www.placevendomeqatar.com/en",
+   "id": "08dfed06886c042a",
+   "mall_id": "place-vendome",
+   "mall_name": "Place Vendôme Qatar",
+   "seen_sources": [
+    "https://www.placevendomeqatar.com/en"
+   ],
+   "origin": "local_extractor",
+   "fingerprint": "38689c6956f976ab",
+   "locked_fields": [],
+   "verification": "auto_extracted",
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16",
+   "last_checked_at": "2026-10-16 07:34 AST"
   }
  },
  "classifications": {
@@ -875,6 +916,14 @@
    "needs_review": true
   },
   "14e72f567a3d19676dfd": {
+   "category": "Beauty",
+   "subcategory": "Skincare",
+   "tags": [],
+   "confidence": 0.9,
+   "method": "rule",
+   "needs_review": false
+  },
+  "9d01fa3a672fcbc08159": {
    "category": "Beauty",
    "subcategory": "Skincare",
    "tags": [],
