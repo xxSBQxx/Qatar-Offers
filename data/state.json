@@ -30,9 +30,9 @@
    "offer_ids": []
   },
   "https://www.placevendomeqatar.com/en": {
-   "hash": "df263654b2d4321acef29dcfe2e790c63d8e1330",
+   "hash": "709485991c46d9896748bd88ba9659c84df048e1",
    "offer_ids": [
-    "f7aebb625b1d65c3"
+    "b343f26f1cfda7cd"
    ]
   },
   "http://tawarmall.qa/": {
@@ -856,8 +856,8 @@
    "locked_fields": [],
    "verification": "auto_extracted",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-10-19",
-   "last_checked_at": "2026-10-19 07:43 AST"
+   "last_seen": "2026-10-20",
+   "last_checked_at": "2026-10-20 07:53 AST"
   },
   "f7aebb625b1d65c3": {
    "store_name": "Mall promotion",
