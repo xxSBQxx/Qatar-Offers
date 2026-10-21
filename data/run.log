@@ -780,3 +780,37 @@
 2026-10-21 04:50:59,999 INFO done: 22 live offers, 0 new images read, 0 AI calls used, 3 page/image errors
 2026-10-21 04:50:59,999 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
 2026-10-21 04:51:00,000 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:35,311 INFO done: 1 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-10-21 11:51:35,312 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:35,312 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:35,313 INFO done: 1 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-10-21 11:51:35,313 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:35,314 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:35,315 INFO done: 1 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-10-21 11:51:35,315 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:35,315 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:35,315 WARNING fetch retry 1/3 for https://example.test/flaky in 2s (transient)
+2026-10-21 11:51:35,315 WARNING fetch retry 2/3 for https://example.test/flaky in 4s (transient)
+2026-10-21 11:51:35,316 WARNING robots.txt disallows fetching https://example.test/disallowed/page -- skipping, not bypassing
+2026-10-21 11:51:35,316 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:35,316 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:35,316 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:36,819 INFO done: 0 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-10-21 11:51:36,819 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:36,819 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:36,820 ERROR skip page https://example.test/moq: simulated transient network failure
+2026-10-21 11:51:36,820 INFO done: 0 live offers, 0 new images read, 0 AI calls used, 1 page/image errors
+2026-10-21 11:51:36,820 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:36,820 INFO discovery run: 0 candidates in queue (0 new)
+2026-10-21 11:51:46,735 WARNING robots.txt unreadable for https://www.villaggioqatar.com (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>) -- treating as allow-all per RFC default
+2026-10-21 11:51:47,282 WARNING fetch retry 1/3 for https://www.villaggioqatar.com/en in 2s (HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))))
+2026-10-21 11:51:49,822 WARNING fetch retry 2/3 for https://www.villaggioqatar.com/en in 4s (HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))))
+2026-10-21 11:51:54,431 ERROR fetch failed after 3 attempts: https://www.villaggioqatar.com/en (HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))))
+2026-10-21 11:51:54,431 ERROR skip page https://www.villaggioqatar.com/en: HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-10-21 11:51:54,530 WARNING robots.txt disallows fetching https://citycenterdoha.com/brands-for-less/ -- skipping, not bypassing
+2026-10-21 11:51:54,530 WARNING skip page https://citycenterdoha.com/brands-for-less/: robots.txt disallows fetching https://citycenterdoha.com/brands-for-less/
+2026-10-21 11:51:58,026 WARNING robots.txt disallows fetching https://www.lagoonamall.com -- skipping, not bypassing
+2026-10-21 11:51:58,026 WARNING skip page https://www.lagoonamall.com: robots.txt disallows fetching https://www.lagoonamall.com
+2026-10-21 11:51:59,830 INFO done: 22 live offers, 0 new images read, 0 AI calls used, 3 page/image errors
+2026-10-21 11:51:59,831 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-10-21 11:51:59,831 INFO discovery run: 0 candidates in queue (0 new)
