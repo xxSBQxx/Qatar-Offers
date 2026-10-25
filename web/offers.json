@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-25 19:22 AST",
+ "updated": "2026-10-25 23:56 AST",
  "timezone": "Asia/Qatar",
  "status": [
   {
    "id": "mall-of-qatar",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": [
     {
      "title": "www.mallofqatar.com.qa/en/whats-new",
@@ -20,7 +20,7 @@
   },
   {
    "id": "doha-festival-city",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": [
     {
      "title": "www.dohafestivalcity.com/home/whats-on/offers",
@@ -31,7 +31,7 @@
   },
   {
    "id": "place-vendome",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": [
     {
      "title": "www.placevendomeqatar.com/en",
@@ -42,17 +42,17 @@
   },
   {
    "id": "villaggio",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": []
   },
   {
    "id": "city-center",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": []
   },
   {
    "id": "ezdan-mall",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": [
     {
      "title": "gharrafa.ezdanmall.qa/promotions",
@@ -73,12 +73,12 @@
   },
   {
    "id": "lagoona-mall",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": []
   },
   {
    "id": "tawar-mall",
-   "checked_at": "2026-10-25 19:22 AST",
+   "checked_at": "2026-10-25 23:56 AST",
    "sources": [
     {
      "title": "tawarmall.qa/",
