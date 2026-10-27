@@ -30,9 +30,9 @@
    "offer_ids": []
   },
   "https://www.placevendomeqatar.com/en": {
-   "hash": "709485991c46d9896748bd88ba9659c84df048e1",
+   "hash": "df263654b2d4321acef29dcfe2e790c63d8e1330",
    "offer_ids": [
-    "b343f26f1cfda7cd"
+    "f7aebb625b1d65c3"
    ]
   },
   "http://tawarmall.qa/": {
@@ -898,7 +898,7 @@
    "verification": "auto_extracted",
    "first_seen": "2026-10-18",
    "last_seen": "2026-10-27",
-   "last_checked_at": "2026-10-26 16:05 AST"
+   "last_checked_at": "2026-10-27 15:13 AST"
   }
  },
  "classifications": {
