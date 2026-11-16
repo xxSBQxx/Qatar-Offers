@@ -1,21 +1,26 @@
 {
- "updated": "2026-11-16 09:32 AST",
+ "updated": "2026-11-17 01:03 AST",
  "timezone": "Asia/Qatar",
  "status": [
   {
    "id": "mall-of-qatar",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": [
     {
      "title": "www.mallofqatar.com.qa/en/whats-new",
      "url": "https://www.mallofqatar.com.qa/en/whats-new",
+     "rendered": false
+    },
+    {
+     "title": "mallofqatar.com.qa/en/events/Gear-Up-Win",
+     "url": "https://mallofqatar.com.qa/en/events/Gear-Up-Win",
      "rendered": false
     }
    ]
   },
   {
    "id": "doha-festival-city",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": [
     {
      "title": "www.dohafestivalcity.com/home/whats-on/offers",
@@ -26,7 +31,7 @@
   },
   {
    "id": "place-vendome",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": [
     {
      "title": "www.placevendomeqatar.com/en",
@@ -37,17 +42,17 @@
   },
   {
    "id": "villaggio",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": []
   },
   {
    "id": "city-center",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": []
   },
   {
    "id": "ezdan-mall",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": [
     {
      "title": "gharrafa.ezdanmall.qa/promotions",
@@ -68,12 +73,12 @@
   },
   {
    "id": "lagoona-mall",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": []
   },
   {
    "id": "tawar-mall",
-   "checked_at": "2026-11-16 09:32 AST",
+   "checked_at": "2026-11-17 01:03 AST",
    "sources": [
     {
      "title": "tawarmall.qa/",
@@ -125,7 +130,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -160,7 +165,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -195,7 +200,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -230,7 +235,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -265,7 +270,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -300,7 +305,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -335,7 +340,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -370,7 +375,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -405,7 +410,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -440,7 +445,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -475,7 +480,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -510,7 +515,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -545,7 +550,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -580,7 +585,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -615,7 +620,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -689,7 +694,7 @@
    "needs_review": true,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-10-18 14:07 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-15",
@@ -879,7 +884,7 @@
    "needs_review": false,
    "category_method": "rule",
    "verification": "auto_extracted",
-   "last_checked_at": "2026-11-15 21:52 AST",
+   "last_checked_at": "2026-11-17 01:03 AST",
    "start_date": null,
    "end_date": null,
    "first_seen": "2026-10-18",
