@@ -3571,3 +3571,37 @@
 2026-11-20 07:19:06,072 INFO done: 22 live offers, 0 new images read, 0 AI calls used, 3 page/image errors
 2026-11-20 07:19:06,072 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
 2026-11-20 07:19:06,073 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:27:55,324 INFO done: 1 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-11-20 20:27:55,324 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:55,325 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:27:55,326 INFO done: 1 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-11-20 20:27:55,326 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:55,326 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:27:55,328 INFO done: 1 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-11-20 20:27:55,329 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:55,329 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:27:55,329 WARNING fetch retry 1/3 for https://example.test/flaky in 2s (transient)
+2026-11-20 20:27:55,329 WARNING fetch retry 2/3 for https://example.test/flaky in 4s (transient)
+2026-11-20 20:27:55,330 WARNING robots.txt disallows fetching https://example.test/disallowed/page -- skipping, not bypassing
+2026-11-20 20:27:55,330 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:55,330 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:55,331 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:27:56,833 INFO done: 0 live offers, 0 new images read, 0 AI calls used, 0 page/image errors
+2026-11-20 20:27:56,833 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:56,834 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:27:56,834 ERROR skip page https://example.test/moq: simulated transient network failure
+2026-11-20 20:27:56,835 INFO done: 0 live offers, 0 new images read, 0 AI calls used, 1 page/image errors
+2026-11-20 20:27:56,835 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:27:56,835 INFO discovery run: 0 candidates in queue (0 new)
+2026-11-20 20:28:12,952 WARNING robots.txt unreadable for https://www.villaggioqatar.com (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>) -- treating as allow-all per RFC default
+2026-11-20 20:28:13,391 WARNING fetch retry 1/3 for https://www.villaggioqatar.com/en in 2s (HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)'))))
+2026-11-20 20:28:16,071 WARNING fetch retry 2/3 for https://www.villaggioqatar.com/en in 4s (HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)'))))
+2026-11-20 20:28:20,578 ERROR fetch failed after 3 attempts: https://www.villaggioqatar.com/en (HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)'))))
+2026-11-20 20:28:20,578 ERROR skip page https://www.villaggioqatar.com/en: HTTPSConnectionPool(host='www.villaggioqatar.com', port=443): Max retries exceeded with url: /en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))
+2026-11-20 20:28:20,679 WARNING robots.txt disallows fetching https://citycenterdoha.com/brands-for-less/ -- skipping, not bypassing
+2026-11-20 20:28:20,679 WARNING skip page https://citycenterdoha.com/brands-for-less/: robots.txt disallows fetching https://citycenterdoha.com/brands-for-less/
+2026-11-20 20:28:25,080 WARNING robots.txt disallows fetching https://www.lagoonamall.com -- skipping, not bypassing
+2026-11-20 20:28:25,080 WARNING skip page https://www.lagoonamall.com: robots.txt disallows fetching https://www.lagoonamall.com
+2026-11-20 20:28:27,392 INFO done: 22 live offers, 0 new images read, 0 AI calls used, 3 page/image errors
+2026-11-20 20:28:27,392 WARNING No search provider configured (set GOOGLE_CSE_API_KEY+GOOGLE_CSE_CX, BING_SEARCH_KEY, or SERPAPI_KEY) -- discovery cannot run. This is expected until the project owner provisions one; see START_HERE.md.
+2026-11-20 20:28:27,393 INFO discovery run: 0 candidates in queue (0 new)
