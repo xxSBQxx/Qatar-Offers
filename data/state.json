@@ -36,7 +36,7 @@
    ]
   },
   "http://tawarmall.qa/": {
-   "hash": "5bb70fbc13fdd65e421c9fb3888a6f6b466c214c",
+   "hash": "375a6c695d0e1216962abea10b8916b77777e5a3",
    "offer_ids": [
     "65d4d61cd4846868"
    ]
@@ -693,7 +693,7 @@
    "verification": "auto_extracted",
    "first_seen": "2026-10-15",
    "last_seen": "2026-11-24",
-   "last_checked_at": "2026-11-17 01:03 AST"
+   "last_checked_at": "2026-11-24 12:56 AST"
   },
   "55bc70ea196ac7e1": {
    "store_name": "Mall promotion",
